@@ -1,0 +1,13 @@
+.search-container {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  margin: 20px 10px;
+}
+
+.horizontal {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}

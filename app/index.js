@@ -13,6 +13,7 @@ import createHistory from 'history/createBrowserHistory';
 import reducers from './src/reducers';
 import sagas from './src/sagas';
 import Home from './src/containers/home';
+import styles from './index.css';
 
 const history = createHistory();
 const middleware = routerMiddleware(history);

@@ -1,7 +1,7 @@
 export default {
   spacebtnWidth: {
-   width: 200,
- },
+    width: 200,
+  },
 
  button : {
     backgroundColor:"#0a0",
@@ -16,19 +16,31 @@ export default {
   auto : {
     width: '100%',
     maxWidth: '450px',
-    height: '60px',
+    height: '40px',
     borderRadius:'.4em',
     borderWidth: 0,
+    border: '1px solid grey'
   },
 
   dropDown: {
-    width: '100%',
-    height: '60px',
-    maxWidth: '450px',
-  },
+    menu: {
+      width: '100%',
+      height: '40px',
+      maxWidth: '450px'
+    },
 
-  dropDownLabel: {
-    color: '#fff',
-  },
+    label: {
+      paddingLeft: '0px',
+      paddingRight: '0px'
+    },
 
+    icon: {
+      right: '0px',
+      padding: '0px'
+    },
+
+    underline: {
+      margin: '0px'
+    }
+  },
 };
