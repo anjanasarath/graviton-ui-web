@@ -12,7 +12,7 @@ import thunkMiddleware from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
 import reducers from './src/reducers';
 import sagas from './src/sagas';
-import Header from './src/components/header';
+import Home from './src/containers/home';
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
@@ -22,8 +22,9 @@ const store = createStore(
   reducers,
   undefined,
   compose(applyMiddleware(thunkMiddleware, sagaMiddleware, promiseMiddleware(), middleware))
-)
+);
 
+// "to initialise application with existing browser session..."
 sessionService.initSessionService(store, { driver: 'COOKIES' });
 sagaMiddleware.run(sagas);
 
@@ -32,8 +33,8 @@ ReactDOM.render(
     <MuiThemeProvider>
       <ConnectedRouter history={history}>
         <div>
-          <Route exact path="/" component={Header}/>
-          <Route path="/home" component={Header}/>
+          <Route exact path="/" component={Home}/>
+          <Route path="/home" component={Home}/>
         </div>
       </ConnectedRouter>
     </MuiThemeProvider>
