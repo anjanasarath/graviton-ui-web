@@ -15,7 +15,6 @@ export default {
 
   auto : {
     width: '100%',
-    maxWidth: '450px',
     height: '40px',
     borderRadius:'.4em',
     borderWidth: 0,
@@ -26,7 +25,6 @@ export default {
     menu: {
       width: '100%',
       height: '40px',
-      maxWidth: '450px'
     },
 
     label: {
