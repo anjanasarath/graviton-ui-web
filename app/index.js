@@ -8,7 +8,6 @@ import { ConnectedRouter, routerMiddleware, push } from 'react-router-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { sessionService } from 'redux-react-session';
 import createSagaMiddleware from 'redux-saga';
-import thunkMiddleware from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
 import reducers from './src/reducers';
 import sagas from './src/sagas';
@@ -22,7 +21,7 @@ const sagaMiddleware = createSagaMiddleware({});
 const store = createStore(
   reducers,
   undefined,
-  compose(applyMiddleware(thunkMiddleware, sagaMiddleware, promiseMiddleware(), middleware))
+  compose(applyMiddleware(sagaMiddleware, promiseMiddleware(), middleware))
 );
 
 // "to initialise application with existing browser session..."
