@@ -23,47 +23,49 @@ class SearchParking extends React.Component {
   render() {
     return(
       <div className="search-container">
-        <Card expanded={true}>
-          <CardHeader
-            title="Find parking in seconds"
-            subtitle="Choose from millions of available spaces, or reserve your space in advance. Join over 1.5 million drivers enjoying easy parking."
-          />
-          <CardText>
-            <div>
-              <Autocomplete
-                style={Styles.auto}
-                onPlaceSelected={(place) => { console.log(place); }}
-                types={['(regions)']}
-                componentRestrictions={{country: "ru"}}
-              />
-            </div>
-            <div>
-              <DropDownMenu
-                title="Space"
-                value={this.state.value}
-                onChange={this.handleChange}
-                style={Styles.dropDown.menu}
-                autoWidth={false}
-                labelStyle={Styles.dropDown.label}
-                iconStyle={Styles.dropDown.icon}
-                underlineStyle={Styles.dropDown.underline}
-              >
-                <MenuItem value={0} primaryText="Space"/>
-                <MenuItem value={1} primaryText="Parking"/>
-                <MenuItem value={2} primaryText="Warehouse"/>
-              </DropDownMenu>
-            </div>
-            <div className="horizontal">
-              <RaisedButton style={Styles.rbutton} className="flex1" buttonStyle={Styles.button}>
-                Search
-              </RaisedButton>
-              <span>&nbsp;</span>
-              <RaisedButton style={Styles.rbutton} className="flex1" buttonStyle={Styles.button}>
-                I Feel Lucky
-              </RaisedButton>
-            </div>
-          </CardText>
-        </Card>
+        <div className="search-card">
+          <Card expanded={true}>
+            <CardHeader
+              title="Find parking in seconds"
+              subtitle="Choose from millions of available spaces, or reserve your space in advance. Join over 1.5 million drivers enjoying easy parking."
+            />
+            <CardText>
+              <div>
+                <Autocomplete
+                  style={Styles.auto}
+                  onPlaceSelected={(place) => { console.log(place); }}
+                  types={['(regions)']}
+                  componentRestrictions={{country: "ru"}}
+                />
+              </div>
+              <div>
+                <DropDownMenu
+                  title="Space"
+                  value={this.state.value}
+                  onChange={this.handleChange}
+                  style={Styles.dropDown.menu}
+                  autoWidth={false}
+                  labelStyle={Styles.dropDown.label}
+                  iconStyle={Styles.dropDown.icon}
+                  underlineStyle={Styles.dropDown.underline}
+                >
+                  <MenuItem value={0} primaryText="Space"/>
+                  <MenuItem value={1} primaryText="Parking"/>
+                  <MenuItem value={2} primaryText="Warehouse"/>
+                </DropDownMenu>
+              </div>
+              <div className="horizontal">
+                <RaisedButton style={Styles.rbutton} className="flex1" buttonStyle={Styles.button}>
+                  Search
+                </RaisedButton>
+                <span>&nbsp;</span>
+                <RaisedButton style={Styles.rbutton} className="flex1" buttonStyle={Styles.button}>
+                  I Feel Lucky
+                </RaisedButton>
+              </div>
+            </CardText>
+          </Card>
+        </div>
         <div className="flex1"></div>
       </div>
   );
