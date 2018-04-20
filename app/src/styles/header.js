@@ -7,7 +7,7 @@ export default {
    textTransform: 'regular',
   },
   signup: {
-   color:'#8BC34A',
+   color:'#F50057',
    textTransform: 'regular',
   },
   button : {

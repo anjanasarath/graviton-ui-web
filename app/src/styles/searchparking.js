@@ -4,9 +4,10 @@ export default {
   },
 
  button : {
-    backgroundColor:"#0a0",
+    backgroundColor:"#F50057",
     borderRadius:'.4em',
     height:'60px',
+    color: '#fff',
   },
 
   rbutton : {
