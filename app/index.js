@@ -12,6 +12,7 @@ import createHistory from 'history/createBrowserHistory';
 import reducers from './src/reducers';
 import sagas from './src/sagas';
 import Home from './src/containers/home';
+import LoginPage from './src/components/loginPage';
 import styles from './index.css';
 
 const history = createHistory();
@@ -35,6 +36,7 @@ ReactDOM.render(
         <div>
           <Route exact path="/" component={Home}/>
           <Route path="/home" component={Home}/>
+          <Route path="/login" component={LoginPage}/>
         </div>
       </ConnectedRouter>
     </MuiThemeProvider>
