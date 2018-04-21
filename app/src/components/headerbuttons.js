@@ -1,44 +1,26 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { push } from 'react-router-redux';
 import FlatButton from 'material-ui/FlatButton';
 import Styles from '../styles/header';
 
-class AppBarTopButtons extends  React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      loginSuccess : false,
-      signupSuccess : false,
-    },
-    this.handleLogin = this.handleLogin.bind(this);
-    this.handleSignup = this.handleSignup.bind(this);
-  }
+const AppBarTopButtons = (props) => (
+  <div>
+      <FlatButton label="Help" labelStyle={Styles.label} style={Styles.button} />
+      <span className="mui--divider-right"><FlatButton label="List your space" labelStyle={Styles.label} style={Styles.button} /></span>
+      <span className="mui--divider-right"><FlatButton label="Login" onClick={props.login} labelStyle={Styles.label} style={Styles.button} />&nbsp;</span>
+      <span>&nbsp;<FlatButton label="Sign Up" onClick={props.signUp} labelStyle={Styles.signup} style={Styles.button} /></span>
+  </div>
+);
 
-  handleLogin(event) {
-    this.setState({
-      loginSuccess: true,
-    });
-    console.log(this.state.loginSuccess);
+const mapDispatchToProps = (dispatch) => ({
+  login: (event) => {
+    dispatch(push('/login'));
+  },
+  signUp: (event) => {
+    dispatch(push('/signup'));
   }
+});
 
-  handleSignup(event) {
-    this.setState({
-      signupSuccess: true,
-    });
-    console.log(this.state.signupSuccess);
-  }
-  render() {
-    return (
-      <div>
-          { this.state.loginSuccess && <Redirect to='/login' push/> }
-          { this.state.signupSuccess && <Redirect to='/signin' push/> }
-          <FlatButton label="Help" labelStyle={Styles.label} style={Styles.button} />
-          <span className="mui--divider-right"><FlatButton label="List your space" labelStyle={Styles.label} style={Styles.button} /></span>
-          <span className="mui--divider-right"><FlatButton label="Login" onClick={this.handleLogin} labelStyle={Styles.label} style={Styles.button} />&nbsp;</span>
-          <span>&nbsp;<FlatButton label="Sign Up" onClick={this.handleSignup} labelStyle={Styles.signup} style={Styles.button} /></span>
-      </div>
-    );
-  }
-}
-export default AppBarTopButtons;
+export default connect(null, mapDispatchToProps)(AppBarTopButtons);

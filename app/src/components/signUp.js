@@ -54,11 +54,11 @@ export default class SignUpPage extends React.Component {
             <p>Takes only a few seconds</p>
             <div>
               <CardText>Email Address or phone number</CardText>
-              <TextField></TextField>
+              <TextField name="text1"></TextField>
             </div>
             <div>
               <CardText>Password</CardText>
-              <TextField></TextField>
+              <TextField name="text2"></TextField>
             </div>
             <div>
               <button style={Styles.footerbtn}>Log in</button>
