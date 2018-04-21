@@ -4,13 +4,12 @@ import AppBar from 'material-ui/AppBar';
 import Divider from 'muicss/lib/react/divider';
 import Logo from '../images/header_logo.svg';
 import Styles from '../styles/header';
-import RightButtons from './rightButtons';
-
+import AppBarTopButtons from './headerbuttons';
 
 const Header = () => (
   <AppBar style={Styles.header}
     title={<span><img src={Logo}/></span>}
-    iconElementRight={<RightButtons/>}
+    iconElementRight={<AppBarTopButtons/>}
     showMenuIconButton={false}
   />
 );

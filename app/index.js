@@ -13,6 +13,7 @@ import reducers from './src/reducers';
 import sagas from './src/sagas';
 import Home from './src/containers/home';
 import LoginPage from './src/components/loginPage';
+import SignUpPage from './src/components/signUp';
 import styles from './index.css';
 
 const history = createHistory();
@@ -37,6 +38,7 @@ ReactDOM.render(
           <Route exact path="/" component={Home}/>
           <Route path="/home" component={Home}/>
           <Route path="/login" component={LoginPage}/>
+          <Route path="/signin" component={SignUpPage}/>
         </div>
       </ConnectedRouter>
     </MuiThemeProvider>
