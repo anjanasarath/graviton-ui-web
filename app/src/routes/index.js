@@ -10,13 +10,15 @@ import SignUp from '../containers/signUp';
 
 const Routes = (props) => (
   <ConnectedRouter history={props.history}>
-    <div>
-      <Header />
-      <Route exact path="/" component={Home}/>
-      <Route path="/home" component={Home}/>
-      <Route path="/login" component={Login}/>
-      <Route path="/signup" component={SignUp}/>
-      <Footer/>
+    <div className="row-graviton">
+      <div><Header /></div>
+      <div className="flex1">
+        <Route exact path="/" component={Home}/>
+        <Route path="/home" component={Home}/>
+        <Route path="/login" component={Login}/>
+        <Route path="/signup" component={SignUp}/>
+      </div>
+      <div><Footer /></div>
     </div>
   </ConnectedRouter>
 );
