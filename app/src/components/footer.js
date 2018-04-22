@@ -64,7 +64,7 @@ export default class Footer extends React.Component {
              const {valuesLang, valuesCurr} = this.state;
     return(
           <div className="footer horizontal">
-            <div className="flex1">
+            <div className="flex1 text-center">
               <SelectField
                 multiple={false}
                 hintText="Select Language"
@@ -82,7 +82,7 @@ export default class Footer extends React.Component {
                 {this.menuItemsCurr(valuesCurr)}
               </SelectField>
             </div>
-            <div className="flex1">
+            <div className="flex1 text-center">
               <Subheader>Company</Subheader>
               <p>Terms of Service</p>
               <p>Privacy Policy</p>
@@ -93,12 +93,12 @@ export default class Footer extends React.Component {
               <p>About Us</p>
               <p>Contact Us</p>
             </div>
-            <div className="flex1">
+            <div className="flex1 text-center">
               <Subheader>Discover</Subheader>
               <p>Travel Credit</p>
               <p>Trust & Safety</p>
             </div>
-            <div className="flex1">
+            <div className="flex1 text-center">
               <Subheader>Hosting</Subheader>
               <p>Why Host</p>
               <p>Hospitality</p>
