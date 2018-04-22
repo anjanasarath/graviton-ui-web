@@ -24,25 +24,21 @@ class ControlledCarousel extends React.Component {
 
     this.state = {
       index: 0,
-      direction: null
     };
   }
 
-  handleSelect(selectedIndex, e) {
-    alert(`selected=${selectedIndex}, direction=${e.direction}`);
+  handleSelect(selectedIndex) {
     this.setState({
       index: selectedIndex,
-      direction: e.direction
     });
   }
 
   render() {
-    const { index, direction } = this.state;
+    const { index } = this.state;
 
     return (
       <Carousel
         activeIndex={index}
-        direction={direction}
         onSelect={this.handleSelect}
       >
         <Carousel.Item style={this.styles.image1}/>
