@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import { connect } from 'react-redux';
 import Subheader from 'material-ui/Subheader';
 import MenuItem from 'material-ui/MenuItem';
 import SelectField from 'material-ui/SelectField';
@@ -15,7 +16,26 @@ const languages = [
   'Renminibi'
   ];
 
-const menuItemsLang = (valuesLang) => (
+export default class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      valuesLang : [],
+      valuesCurr : [],
+    };
+       this.handleChangeLang = this.handleChangeLang.bind(this);
+       this.handleChangeCurr = this.handleChangeCurr.bind(this);
+    }
+
+  handleChangeLang(event, index, valuesLang) {
+     this.setState({valuesLang});
+   }
+
+  handleChangeCurr(event, index, valuesCurr) {
+    this.setState({valuesCurr});
+  }
+
+  menuItemsLang(valuesLang) {
     return languages.map((lang) => (
       <MenuItem
         key={lang}
@@ -25,9 +45,9 @@ const menuItemsLang = (valuesLang) => (
         primaryText={lang}
       />
     ));
-  )
+  }
 
-const menuItemsCurr = (valuesCurr) => (
+  menuItemsCurr(valuesCurr) {
     return currencies.map((curr) => (
       <MenuItem
         key={curr}
@@ -37,10 +57,14 @@ const menuItemsCurr = (valuesCurr) => (
         primaryText={curr}
       />
     ));
-  )
-const FooterComponent = (props) => (
-          <div>
-            <div>
+  }
+
+
+  render() {
+             const {valuesLang, valuesCurr} = this.state;
+    return(
+          <div className="footer horizontal">
+            <div className="flex1">
               <SelectField
                 multiple={false}
                 hintText="Select Language"
@@ -58,9 +82,9 @@ const FooterComponent = (props) => (
                 {this.menuItemsCurr(valuesCurr)}
               </SelectField>
             </div>
-            <div>
+            <div className="flex1">
               <Subheader>Company</Subheader>
-              <p>Terms of Service</p>push('/loginFailure')
+              <p>Terms of Service</p>
               <p>Privacy Policy</p>
               <p>Host Guarantee</p>
               <p>Guest Refund</p>
@@ -69,28 +93,17 @@ const FooterComponent = (props) => (
               <p>About Us</p>
               <p>Contact Us</p>
             </div>
-            <div>
+            <div className="flex1">
               <Subheader>Discover</Subheader>
               <p>Travel Credit</p>
               <p>Trust & Safety</p>
             </div>
-          <div>
-            <Subheader>Hosting</Subheader>
-            <p>Why Host</p>
-            <p>Hospitality</p>
+            <div className="flex1">
+              <Subheader>Hosting</Subheader>
+              <p>Why Host</p>
+              <p>Hospitality</p>
+            </div>
           </div>
-      </div>
-    );
-  }
-}
-
-const mapDispatchToProps = (dispatch) => ({
-  valuesCurr: (event,index,valuesCurr) => {
-    dispatch();
-  },
-  valuesLang: (event,index,valuesLang) => {
-    dispatch();
-  },
-});
-
-export default connect(null, mapDispatchToProps)(Login);
+        );
+      }
+    }
