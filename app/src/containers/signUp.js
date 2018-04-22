@@ -10,14 +10,14 @@ import TextField from 'material-ui/TextField';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import SocialLogin from '../components/sociallogin';
-import Styles from '../styles/login';
+import Styles from '../styles/signUp';
 
-const Login = (props) => (
+const SignUp = (props) => (
   <div className="login-container">
     <div className="login-card">
       <Card expanded={true}>
         <div className="login-modal">
-          <CardHeader title= "Please log in to your account" style={Styles.cardheader}/>
+          <CardHeader title= "Register for an account" style={Styles.cardheader}/>
         </div>
         <div className="text-center marginTop1">
           <SocialLogin
@@ -42,17 +42,15 @@ const Login = (props) => (
           </SocialLogin>
         </div>
         <Divider style={Styles.divider}></Divider>
+        <div className="row-graviton login-footer-color">
+          <CardText>Takes only a few seconds</CardText>
+        </div>
         <div className="login-graviton">
           <TextField name="text1" hintText="Email Address or Username" fullWidth={true}></TextField>
           <TextField name="text2" hintText="Password" fullWidth={true}></TextField>
-          <div className="text-center">
-            <button style={Styles.footerbtn}>Log In</button>
+          <div className="text-center marginBottom1 marginTop5">
+            <button style={Styles.footerbtn}>Sign Up</button>
           </div>
-        </div>
-        <Divider style={Styles.divider}></Divider>
-        <div className="row-graviton login-footer-color">
-          <CardText>Forgotten your password?</CardText>
-          <CardText>Don&#39;t have an account? <Link to='/signup'><i>SignUp</i></Link> Now</CardText>
         </div>
       </Card>
     </div>
@@ -60,18 +58,18 @@ const Login = (props) => (
 );
 
 const mapDispatchToProps = (dispatch) => ({
-  facebookLoginSuccess: (user) => {
-    dispatch(push('/loginSuccess'));
+  facebookSignUpSuccess: (user) => {
+    dispatch(push('/signupSuccess'));
   },
-  facebookLoginFailure: (error) => {
-    dispatch(push('/loginFailure'));
+  facebooSignUpFailure: (error) => {
+    dispatch(push('/signupFailure'));
   },
-  googleLoginSuccess: (user) => {
-    dispatch(push('/loginSuccess'));
+  googleSignUpSuccess: (user) => {
+    dispatch(push('/signupSuccess'));
   },
-  googleLoginFailure: (error) => {
-    dispatch(push('/loginFailure'));
+  googleSignUpFailure: (error) => {
+    dispatch(push('/signupFailure'));
   },
 });
 
-export default connect(null, mapDispatchToProps)(Login);
+export default connect(null, mapDispatchToProps)(SignUp);

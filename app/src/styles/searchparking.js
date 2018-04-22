@@ -4,7 +4,7 @@ export default {
   },
 
  button : {
-    backgroundColor:"#F50057",
+    backgroundColor:"#880E4F",
     borderRadius:'.4em',
     height:'60px',
     color: '#fff',

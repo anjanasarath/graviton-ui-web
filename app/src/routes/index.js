@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import Home from '../containers/home';
 import Header from '../components/header';
 import Login from '../containers/login';
-import SignUpPage from '../components/signUp';
+import SignUp from '../containers/signUp';
 
 const Routes = (props) => (
   <ConnectedRouter history={props.history}>
@@ -14,7 +14,7 @@ const Routes = (props) => (
       <Route exact path="/" component={Home}/>
       <Route path="/home" component={Home}/>
       <Route path="/login" component={Login}/>
-      <Route path="/signup" component={SignUpPage}/>
+      <Route path="/signup" component={SignUp}/>
     </div>
   </ConnectedRouter>
 );
