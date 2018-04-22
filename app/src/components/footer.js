@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Subheader from 'material-ui/Subheader';
 import MenuItem from 'material-ui/MenuItem';
 import SelectField from 'material-ui/SelectField';
+import Styles from '../styles/footer';
 
 const languages = [
   'English',
@@ -83,7 +84,7 @@ export default class Footer extends React.Component {
               </SelectField>
             </div>
             <div className="flex1 text-center">
-              <Subheader>Company</Subheader>
+              <Subheader style={Styles.subheader}>Company</Subheader>
               <p>Terms of Service</p>
               <p>Privacy Policy</p>
               <p>Host Guarantee</p>
@@ -94,12 +95,12 @@ export default class Footer extends React.Component {
               <p>Contact Us</p>
             </div>
             <div className="flex1 text-center">
-              <Subheader>Discover</Subheader>
+              <Subheader style={Styles.subheader}>Discover</Subheader>
               <p>Travel Credit</p>
               <p>Trust & Safety</p>
             </div>
             <div className="flex1 text-center">
-              <Subheader>Hosting</Subheader>
+              <Subheader style={Styles.subheader}>Hosting</Subheader>
               <p>Why Host</p>
               <p>Hospitality</p>
             </div>
