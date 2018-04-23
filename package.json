@@ -26,6 +26,7 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.1.1",
     "react-router-redux": "^5.0.0-alpha.9",
+    "react-slick": "^0.23.1",
     "react-social-login": "^3.4.2",
     "redux": "^4.0.0",
     "redux-promise-middleware": "^5.0.0",

@@ -32,8 +32,17 @@ html, body {
   border-bottom: 1px solid #bbb;
 }
 
+.transparent {
+  background-color: transparent;
+  background: transparent;
+}
+
 .horizontal {
   display: flex;
+}
+
+.justify {
+  justify-content: center;
 }
 
 .text-center {
