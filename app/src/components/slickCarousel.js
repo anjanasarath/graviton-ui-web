@@ -29,7 +29,6 @@ export default class CarouselHome extends React.Component {
       width: '80%',
       height: '100%',
       margin: 'auto',
-      textAlign: 'center',
     }
 
     const mediaStyle = {
@@ -41,28 +40,28 @@ export default class CarouselHome extends React.Component {
     }
 
     return (
-      <div className="" style={style}>
+      <div style={style}>
         <h5 style={caption}> <i>{ title }</i> </h5>
         <Slider {...settings}>
-          <div className="box-sizing">
+          <div>
             <img src={Image1} alt="" />
           </div>
-          <div className="box-sizing">
+          <div>
             <img src={Image1} alt="" />
           </div>
-          <div className="box-sizing">
+          <div >
             <img src={Image1} alt="" />
           </div>
-          <div className="box-sizing">
+          <div >
             <img src={Image1} alt="" />
           </div>
-          <div className="box-sizing">
+          <div >
             <img src={Image1} alt="" />
           </div>
-          <div className="box-sizing">
+          <div>
             <img src={Image1} alt="" />
           </div>
-          <div className="box-sizing">
+          <div>
             <img src={Image1} alt="" />
           </div>
       </Slider>
