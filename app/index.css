@@ -100,7 +100,8 @@ html, body {
   padding: 0px 20px;
   border: 1px solid #ddd;
   bottom: 0px;
-  background-color: #9E9E9E;
+  background-color: #232323;
+  color: #666;
 }
 
 .mui--divider-right {

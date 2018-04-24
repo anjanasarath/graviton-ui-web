@@ -56,6 +56,7 @@ export default class Footer extends React.Component {
         checked={valuesCurr && valuesCurr.indexOf(curr) > -1}
         value={curr}
         primaryText={curr}
+
       />
     ));
   }
@@ -67,7 +68,9 @@ export default class Footer extends React.Component {
           <div className="footer horizontal">
             <div className="flex1 text-center">
               <SelectField
+                labelStyle={{color:'#fff'}}
                 multiple={false}
+                hintStyle={{color:"#fff"}}
                 hintText="Select Language"
                 value={valuesLang}
                 onChange={this.handleChangeLang}
@@ -75,7 +78,9 @@ export default class Footer extends React.Component {
                 {this.menuItemsLang(valuesLang)}
               </SelectField>
               <SelectField
+                labelStyle={{color:'#fff'}}
                 multiple={false}
+                hintStyle={{color:"#fff"}}
                 hintText="Select Currency"
                 value={valuesCurr}
                 onChange={this.handleChangeCurr}
@@ -84,7 +89,7 @@ export default class Footer extends React.Component {
               </SelectField>
             </div>
             <div className="flex1 text-center">
-              <Subheader style={Styles.subheader}>Company</Subheader>
+              <Subheader style={Styles.subheader}>COMPANY</Subheader>
               <p>Terms of Service</p>
               <p>Privacy Policy</p>
               <p>Host Guarantee</p>
@@ -95,12 +100,12 @@ export default class Footer extends React.Component {
               <p>Contact Us</p>
             </div>
             <div className="flex1 text-center">
-              <Subheader style={Styles.subheader}>Discover</Subheader>
+              <Subheader style={Styles.subheader}>DISCOVER</Subheader>
               <p>Travel Credit</p>
               <p>Trust & Safety</p>
             </div>
             <div className="flex1 text-center">
-              <Subheader style={Styles.subheader}>Hosting</Subheader>
+              <Subheader style={Styles.subheader}>HOSTING</Subheader>
               <p>Why Host</p>
               <p>Hospitality</p>
             </div>

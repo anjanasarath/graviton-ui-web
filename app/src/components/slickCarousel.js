@@ -18,7 +18,7 @@ export default class CarouselHome extends React.Component {
       slidesToShow: 4,
       slidesToScroll: 4,
       arrows: true,
-      autoplay: true,
+      autoplay: false,
       accessibility: true,
       autoplaySpeed: 2500,
       variableWidth: false,
