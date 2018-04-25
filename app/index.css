@@ -7,9 +7,13 @@ html, body {
 }
 
 .search-container {
+  position: absolute;
+    top: 50px;
+
   display: flex;
   flex-flow: row-reverse nowrap;
-  margin: 20px 10px;
+  margin-left: 960px;
+  margin-top: 100px;
 }
 
 .search-card {
@@ -98,7 +102,6 @@ html, body {
 
 .footer {
   padding: 0px 20px;
-  border: 1px solid #ddd;
   bottom: 0px;
   background-color: #232323;
   color: #666;
@@ -108,42 +111,8 @@ html, body {
   border-right: 1px solid rgba(0, 0, 0, .6);
 }
 
-.carousel {  } /* keeps this behind all content */
-
-.carousel .item {
-   left:0 !important;
-   z-index: -1;
-   background-size: cover;
-   -moz-background-size: cover;
-   position: fixed;
-   width: 100%; height: 100%;
-   -webkit-transition: opacity 0s;
-   -moz-transition: opacity 0s;
-   -ms-transition: opacity 0s;
-   -o-transition: opacity 0s;
-   transition: opacity 0s;
-}
-
-.carousel .active {
-  opacity: 1 !important;
-}
-
-.carousel .left {
-   opacity: 1;
-   z-index:2000;
-   -webkit-transition: opacity 0s  !important;
-   -moz-transition: opacity 0s  !important;
-   -ms-transition: opacity 0s  !important;
-   -o-transition: opacity 0s  !important;
-   transition: opacity 0s  !important;
-}
-
-.carousel .right {
-   opacity: 1;
-   z-index:2000;
-   -webkit-transition: opacity 0s  !important;
-   -moz-transition: opacity 0s  !important;
-   -ms-transition: opacity 0s  !important;
-   -o-transition: opacity 0s  !important;
-   transition: opacity 0s  !important;
+.carousel-inner > .item > img {
+     max-height: 500px;
+     margin: 0 auto;
+     width: 100%;
 }

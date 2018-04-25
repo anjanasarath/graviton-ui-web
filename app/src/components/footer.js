@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { connect } from 'react-redux';
 import Subheader from 'material-ui/Subheader';
+import Divider from 'material-ui/Divider';
 import MenuItem from 'material-ui/MenuItem';
 import SelectField from 'material-ui/SelectField';
 import Styles from '../styles/footer';
@@ -16,6 +17,14 @@ const languages = [
   'USD',
   'Renminibi'
   ];
+
+  const style = {
+    divider: {
+      margin: '50px 100px 0px 100px',
+
+      background: '#fff',
+    },
+  }
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -65,6 +74,8 @@ export default class Footer extends React.Component {
   render() {
              const {valuesLang, valuesCurr} = this.state;
     return(
+      <div style={{background:'#BDBDBD'}}>
+        <div style={{height:'30px'}}></div>
           <div className="footer horizontal">
             <div className="flex1 text-center">
               <SelectField
@@ -88,7 +99,7 @@ export default class Footer extends React.Component {
                 {this.menuItemsCurr(valuesCurr)}
               </SelectField>
             </div>
-            <div className="flex1 text-center">
+              <div className="flex1 text-center">
               <Subheader style={Styles.subheader}>COMPANY</Subheader>
               <p>Terms of Service</p>
               <p>Privacy Policy</p>
@@ -110,6 +121,7 @@ export default class Footer extends React.Component {
               <p>Hospitality</p>
             </div>
           </div>
+        </div>
         );
       }
     }

@@ -66,9 +66,9 @@ class SearchParking extends React.Component {
             </CardText>
           </Card>
         </div>
-        <div className="flex1"></div>
-      </div>
+      <div className="flex1"></div>
+    </div>
   );
-}
+ }
 }
 export default SearchParking;
