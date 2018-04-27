@@ -18,7 +18,6 @@ const Routes = (props) => (
         <Route path="/login" component={Login}/>
         <Route path="/signup" component={SignUp}/>
       </div>
-      <div><Footer/></div>
     </div>
   </ConnectedRouter>
 );

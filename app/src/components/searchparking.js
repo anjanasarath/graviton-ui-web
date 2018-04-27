@@ -13,46 +13,28 @@ class SearchParking extends React.Component {
   constructor(props) {
     super();
     this.state = { value: 0 };
-    this.handleChange = this.handleChange.bind(this);
   };
-
-  handleChange(event, index, value) {
-    this.setState({value});
-  }
 
   render() {
     return(
+      <div className="outerContainerSearch">
       <div className="search-container">
         <div className="search-card">
-          <Card expanded={true}>
+          <Card expanded={true} style={{backgroundColor: "#21303e"}}>
             <CardHeader
               title="Find parking in seconds"
+              titleStyle={Styles.title}
+              subtitleStyle={Styles.subTitle}
               subtitle="Choose from millions of available spaces, or reserve your space in advance. Join over 1.5 million drivers enjoying easy parking."
             />
             <CardText>
-              <div>
+              <div className="marginBottom1">
                 <Autocomplete
                   style={Styles.auto}
                   onPlaceSelected={(place) => { console.log(place); }}
                   types={['(regions)']}
                   componentRestrictions={{country: "ru"}}
                 />
-              </div>
-              <div>
-                <DropDownMenu
-                  title="Space"
-                  value={this.state.value}
-                  onChange={this.handleChange}
-                  style={Styles.dropDown.menu}
-                  autoWidth={false}
-                  labelStyle={Styles.dropDown.label}
-                  iconStyle={Styles.dropDown.icon}
-                  underlineStyle={Styles.dropDown.underline}
-                >
-                  <MenuItem value={0} primaryText="Space"/>
-                  <MenuItem value={1} primaryText="Parking"/>
-                  <MenuItem value={2} primaryText="Warehouse"/>
-                </DropDownMenu>
               </div>
               <div className="horizontal">
                 <RaisedButton style={Styles.rbutton} className="flex1" buttonStyle={Styles.button}>
@@ -67,6 +49,7 @@ class SearchParking extends React.Component {
           </Card>
         </div>
       <div className="flex1"></div>
+    </div>
     </div>
   );
  }

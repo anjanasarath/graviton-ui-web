@@ -3,14 +3,17 @@ import ReactDom from 'react-dom';
 import Header from '../components/header';
 import SearchParking from '../components/searchparking';
 import CarouselHome from '../components/slickCarousel';
-import ControlledCarousel from '../components/carousel';
+import ParkingEasy from '../components/parkingMadeEasy';
+import Footer from '../components/footer';
+//import ControlledCarousel from '../components/carousel';
 
 const Home = () => (
   <div>
-    <ControlledCarousel/>
-    <SearchParking/>
-    <CarouselHome title="Featured Booking"/>
-    <CarouselHome title="Recently Booked"/>
+    <div className="cover" style={{zIndex:'-1', height:'600px'}} >
+      <SearchParking/>
+    </div>
+    <ParkingEasy title="Parking made easy"/>
+    <Footer/>
   </div>
 );
 

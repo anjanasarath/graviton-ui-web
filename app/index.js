@@ -1,4 +1,3 @@
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import promiseMiddleware from 'redux-promise-middleware';
@@ -8,6 +7,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { sessionService } from 'redux-react-session';
 import createSagaMiddleware from 'redux-saga';
 import createHistory from 'history/createBrowserHistory';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Routes from './src/routes';
 import reducers from './src/reducers';
 import sagas from './src/sagas';

@@ -6,18 +6,27 @@ html, body {
   height: 100%;
 }
 
+.outerContainerSearch{
+  max-width: 900px;
+  top:0px;
+  background-color: #21303e;
+  width: 100%;
+  height: 600px;
+  margin-left: 0px;
+  margin-right: auto;
+
+}
 .search-container {
   position: absolute;
-    top: 50px;
-
+  top: 50px;
   display: flex;
   flex-flow: row-reverse nowrap;
-  margin-left: 960px;
+  margin-left: 250px;
   margin-top: 100px;
 }
 
 .search-card {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .login-container {
@@ -115,4 +124,64 @@ html, body {
      max-height: 500px;
      margin: 0 auto;
      width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+  .large {
+    display: block;
+  }
+  .small {
+    display: none;
+  }
+}
+
+  @media only screen and (max-width: 767px) {
+    .large {
+      display: none;
+    }
+    .small {
+
+      display: block;
+    }
+  }
+
+.cover {
+  width: 100%;
+  background-image: url(https://www.justpark.com/images/home_hero@3x.webp);
+}
+
+.easy0ne {
+  height:200px;
+  width: 200px;
+  background-image: url(https://www.justpark.com/images/pme_map.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  border: none;
+}
+
+.easytwo {
+  height:200px;
+  width: 200px;
+  background-image: url(https://www.justpark.com/images/pme_reserve.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  border: none;
+}
+
+.easythree {
+  height:200px;
+  width: 200px;
+  background-image: url(https://www.justpark.com/images/pme_park.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  border-box:  none;
+}
+
+.slick-slide *{
+  &:focus, a {
+    outline: none;
+  }
 }

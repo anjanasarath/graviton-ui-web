@@ -4,7 +4,7 @@ export default {
   },
 
  button : {
-    backgroundColor:"#880E4F",
+    backgroundColor:"#007AFF",
     borderRadius:'.4em',
     height:'60px',
     color: '#fff',
@@ -16,10 +16,20 @@ export default {
 
   auto : {
     width: '100%',
-    height: '40px',
+    height: '60px',
     borderRadius:'.4em',
     borderWidth: 0,
     border: '1px solid grey'
+  },
+
+  subTitle: {
+    color: '#fff',
+    fontSize: 'normal',
+  },
+
+  title: {
+    color: '#fff',
+    fontSize: '20px',
   },
 
   dropDown: {
