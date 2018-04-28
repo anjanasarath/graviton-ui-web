@@ -1,0 +1,116 @@
+@import 'src/fonts/circular.css';
+
+html, body {
+  height: 100%;
+  font-family: 'CircularStd-Book';
+}
+
+.lh-1-5 {
+  line-height: 1.5em;
+}
+
+
+/*************************************************** Header ***************************************************/
+.navbar-color {
+  background-color: #007aff !important;
+}
+
+
+/*********************************************** Search Parking ***********************************************/
+.search-container {
+  max-height: 20em;
+  height: 100%;
+  background: url('https://static.justpark.com/web/8362adeb44b0343a18739c28247c9d0e.webp') 50% 50% no-repeat #21303e;
+  background-size: contain;
+}
+
+.card {
+  max-width: 30em;
+}
+
+.search-auto-complete {
+  width: 100%;
+  height: 4em;
+  border-radius: .4em;
+  border-width: 0;
+  border: 1px solid grey;
+  padding-left: 3em;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNyAyNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpmaWdtYT0iaHR0cDovL3d3dy5maWdtYS5jb20vZmlnbWEvbnMiPgo8dGl0bGU+c2lkZWNhcl9vZmZpY2UtaWNvbi1zZXQtNzI8L3RpdGxlPgo8ZGVzYz5DcmVhdGVkIHVzaW5nIEZpZ21hPC9kZXNjPgo8ZyBpZD0iQ2FudmFzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTYwIC0xNTcpIiBmaWdtYTp0eXBlPSJjYW52YXMiPgo8ZyBpZD0ic2lkZWNhcl9vZmZpY2UtaWNvbi1zZXQtNzIiIGZpZ21hOnR5cGU9ImZyYW1lIj4KPGcgaWQ9IkxheWVyXzEiIGZpZ21hOnR5cGU9ImZyYW1lIj4KPGcgaWQ9IlNoYXBlIiBmaWdtYTp0eXBlPSJ2ZWN0b3Itb3BlcmF0aW9uIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYwLjk1IDE1Ny4xKSIvPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDEwLjc1IDBDIDEzLjY1IDAgMTYuMzUgMS4xMDAwMSAxOC4zNSAzLjEwMDAxQyAyMi4yNSA3IDIyLjU1IDEzLjEgMTkuMTUgMTcuMkwgMjUuNTUgMjMuNkMgMjYuMDUgMjQuMSAyNi4wNSAyNC45IDI1LjU1IDI1LjRDIDI1LjI1IDI1LjcgMjQuOTUgMjUuOCAyNC42NSAyNS44QyAyNC4zNSAyNS44IDIzLjk1IDI1LjYgMjMuNzUgMjUuNEwgMTcuMzUgMTlDIDE1LjQ1IDIwLjUgMTMuMTUgMjEuMyAxMC43NSAyMS4zQyA3Ljg1MDAxIDIxLjMgNS4xNSAyMC4yIDMuMTUgMTguMkMgLTEuMDUgMTQuMSAtMS4wNSA3LjMgMy4xNSAzLjEwMDAxQyA1LjI1IDEuMTAwMDEgNy44NTAwMSAwIDEwLjc1IDBaTSA1LjA0OTk5IDQuODk5OTlDIDEuODQ5OTkgOC4xMDAwMSAxLjg0OTk5IDEzLjMgNS4wNDk5OSAxNi41QyA2LjU0OTk5IDE4IDguNjUgMTguOSAxMC44NSAxOC45QyAxMy4wNSAxOC45IDE1LjA1IDE4IDE2LjY1IDE2LjVDIDE5Ljg1IDEzLjMgMTkuODUgOC4xMDAwMSAxNi42NSA0Ljg5OTk5QyAxNS4wNSAzLjM5OTk5IDEzLjA1IDIuNSAxMC44NSAyLjVDIDguNjUgMi41IDYuNTQ5OTkgMy4zOTk5OSA1LjA0OTk5IDQuODk5OTlaIi8+CjwvZGVmcz4KPC9zdmc+Cg==') .75em 50% no-repeat;
+}
+
+.search-button {
+  background-color: #007AFF !important;
+  border-radius: .4em;
+  height: 4em;
+  color: #fff;
+  width: 97%;
+  margin: 6px 0px !important;
+  text-transform: none;
+}
+
+.search-card {
+  background-color: inherit;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 40em) {
+  .search-container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .search-container {
+    max-height: 40em;
+    background: url('https://static.justpark.com/web/d853a2a52487372dc1da6a37022a4384.webp') no-repeat #21303e;
+    background-size: cover;
+  }
+
+  .search-card .card-title {
+    font-size: xx-large;
+  }
+
+  .search-span {
+    width: 50%;
+    height: 100%;
+    background-color: #21303e;
+  }
+}
+
+/************************************************ Easy Parking ************************************************/
+.round-img {
+  height:200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  border: none;
+  margin: 0 auto;
+}
+
+.easy0ne {
+  background-image: url(https://www.justpark.com/images/pme_map.webp);
+}
+
+.easytwo {
+  background-image: url(https://www.justpark.com/images/pme_reserve.webp);
+}
+
+.easythree {
+  background-image: url(https://www.justpark.com/images/pme_park.webp);
+}
+
+.easypark-title {
+  color: #007aff;
+  line-height: 4em;
+}
+
+.easypark-caption {
+  color: #007aff;
+  line-height: 1.5em;
+}
+
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+  color: #007aff;
+  font-size: 20px;
+}

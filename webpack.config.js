@@ -36,7 +36,7 @@ module.exports = {
         }
       },
       {test: /\.css$/, enforce: "pre", use: ['style-loader','css-loader']},
-      {test: /\.(png|jpg|gif|svg|jpeg)$/, enforce: "pre", use:[{loader: 'url-loader',options: {limit: 25000}}]}
+      {test: /\.(png|jpg|gif|svg|jpeg|otf|ttf|eot|woff|webp)$/, enforce: "pre", use:[{loader: 'url-loader',options: {limit: 25000}}]}
     ]
   },
   devServer: {
