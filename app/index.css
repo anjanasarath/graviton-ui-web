@@ -165,7 +165,7 @@ html, body {
 /************************************************ Easy Parking ************************************************/
 .easy-container {
   height: 100%;
-  max-height: 20em;
+  max-height: 30em;
 }
 
 @media screen and (min-width: 40em) {
@@ -227,7 +227,7 @@ html, body {
 
 .review-container {
   height: 100%;
-  max-height: 35em;
+  max-height: 40em;
 }
 
 .review-section {
@@ -241,7 +241,11 @@ html, body {
     background-color: #21303e;
   }
 }
-
+@media screen and (max-width: 40em) {
+  .review-title {
+    color: #007AFF;
+  }
+}
 .review-title {
   color: #FFF;
   line-height: 4em;
