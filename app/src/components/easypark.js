@@ -4,7 +4,7 @@ import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'm
 import MediaQuery from 'react-responsive';
 
 const ParkingEasySlider = (props) => (
-  <Slider {...props.settings}>
+  <Slider {...props.settings} className='easy-slick'>
     <div>
       <img className="round-img easy0ne" alt="" />
       <h3 className='easypark-caption'>Whereever, whenever</h3>
@@ -47,7 +47,7 @@ const mobileSettings = {
 };
 
 const ParkingEasy = () => (
-  <div className='text-center mb-5 lh-1-5 mt-5'>
+  <div className='text-center lh-1-5 mt-5 easy-container'>
     <h2 className='easypark-title'>Parking made easy</h2>
     <MediaQuery query='(min-device-width: 40em)'>
       <ParkingEasySlider settings={webSettings}/>
