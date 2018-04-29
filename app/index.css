@@ -5,14 +5,31 @@ html, body {
   font-family: 'CircularStd-Book';
 }
 
+.text-yellow {
+  color: #ffc107;
+}
+
 .lh-1-5 {
   line-height: 1.5em;
 }
 
+.max-h-20 {
+  max-height: 40em;
+}
+
+.card {
+  max-width: 30em;
+}
+
+/*************************************************** Slick ***************************************************/
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+  color: #007aff;
+  font-size: 20px;
+}
 
 /*************************************************** Header ***************************************************/
-.navbar-color {
-  background-color: #007aff !important;
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #D1C7C7;
 }
 
 
@@ -22,10 +39,6 @@ html, body {
   height: 100%;
   background: url('https://static.justpark.com/web/8362adeb44b0343a18739c28247c9d0e.webp') 50% 50% no-repeat #21303e;
   background-size: contain;
-}
-
-.card {
-  max-width: 30em;
 }
 
 .search-auto-complete {
@@ -53,6 +66,11 @@ html, body {
   box-shadow: none !important;
 }
 
+.search-park-title::after {
+    content: " seconds";
+    color: #007AFF;
+}
+
 @media screen and (max-width: 40em) {
   .search-container {
     text-align: center;
@@ -66,6 +84,10 @@ html, body {
     background-size: cover;
   }
 
+  .search-container {
+    justify-content: center;
+  }
+
   .search-card .card-title {
     font-size: xx-large;
   }
@@ -74,6 +96,70 @@ html, body {
     width: 50%;
     height: 100%;
     background-color: #21303e;
+  }
+}
+
+/************************************************ Rent Park ************************************************/
+
+.rentpark-container {
+  max-height: 20em;
+  height: 100%;
+  background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') 50% 50% no-repeat #21303e;
+  background-size: cover;
+}
+
+@media screen and (min-width: 40em) {
+  .rentpark-container {
+    max-height: 70em;
+    background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') no-repeat #21303e;
+    background-size: cover;
+  }
+
+  .rent-span {
+    background: hsla(0,0%,100%,.7);
+  }
+
+  .rentinner-span {
+    background: hsla(0,0%,100%,.09);
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .rentpark-container {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+/************************************************ Car Park ************************************************/
+
+.carpark-container {
+  max-height: 20em;
+  height: 100%;
+  background: url('https://static.justpark.com/web/84c75e192fe467e14e15a8e196e6cf5c.webp') 50% 50% no-repeat #21303e;
+  background-size: cover;
+}
+
+@media screen and (max-width: 40em) {
+  .carpark-container {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 40em) {
+
+  .car-span {
+    background: hsla(0,0%,100%,.5);
+  }
+
+  .carinner-span {
+    background: hsla(0,0%,100%,.08);
+  }
+  .carpark-container {
+    max-height: 40em;
+    background: url('https://static.justpark.com/web/84c75e192fe467e14e15a8e196e6cf5c.webp') no-repeat #21303e;
+    background-size: cover;
   }
 }
 
@@ -110,7 +196,37 @@ html, body {
   line-height: 1.5em;
 }
 
-.slick-dots li button:before, .slick-dots li.slick-active button:before {
-  color: #007aff;
-  font-size: 20px;
+/*************************************************** Reviews ***************************************************/
+.user-profile-image {
+  width: 3em;
+  height: 3em;
+}
+
+.review-slider {
+  width: 100%;
+  max-width: 80em;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.review-container {
+  height: 100%;
+  max-height: 35em;
+}
+
+.review-section {
+  margin: 2em 2em;
+}
+
+@media screen and (min-width: 40em) {
+  .review-container {
+    max-height: 50em;
+    height: 100%;
+    background-color: #21303e;
+  }
+}
+
+.review-title {
+  color: #FFF;
+  line-height: 4em;
 }

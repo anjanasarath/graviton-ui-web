@@ -5,10 +5,10 @@ import { Button, Card, CardBody, CardTitle, CardText } from 'mdbreact';
 
 const SearchParking = () => (
   <div className="search-container">
-    <span className="d-flex flex-row-reverse align-items-center search-span">
+    <span className="d-flex flex-row-reverse justify-content-center align-items-center search-span">
       <Card className='search-card mr-lg-2'>
         <CardBody>
-          <CardTitle className='text-white'>Find parking in seconds</CardTitle>
+          <CardTitle className='text-white search-park-title'>Find parking in</CardTitle>
           <CardText className='text-white'>
             Choose from millions of available spaces, or reserve your space in advance. Join over 1.5 million drivers enjoying easy parking.
           </CardText>
@@ -17,7 +17,7 @@ const SearchParking = () => (
             placeholder="Where do you want to park?"
             onPlaceSelected={(place) => { console.log(place); }}
             types={['(regions)']}
-            componentRestrictions={{country: "ru"}}
+            componentRestrictions={{country: "mx"}}
           />
           <span className='w-50 btn-group justify-content-center'>
             <Button className='search-button'>Search</Button>
