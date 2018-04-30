@@ -6,6 +6,8 @@ import MultiCarouselPage from '../components/easypark';
 import RentParking from '../components/rentpark';
 import CarParking from '../components/carpark';
 import Review from '../components/review';
+//import DownloadApp from '../components/downloadapp';
+import Footerr from '../components/footer';
 
 
 const Home = () => (
@@ -16,6 +18,7 @@ const Home = () => (
     <RentParking/>
     <Review/>
     <CarParking/>
+    <Footerr/>
   </div>
 );
 

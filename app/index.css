@@ -13,13 +13,18 @@ html, body {
   line-height: 1.5em;
 }
 
-.max-h-20 {
-  max-height: 40em;
+.max-h-35 {
+  max-height: 35em;
+}
+
+.m-b-0 {
+  margin-bottom: 0;
 }
 
 .card {
   max-width: 30em;
 }
+
 
 /*************************************************** Slick ***************************************************/
 .slick-dots li button:before, .slick-dots li.slick-active button:before {
@@ -240,13 +245,100 @@ html, body {
     height: 100%;
     background-color: #21303e;
   }
+
+  .review-title {
+    color: #FFF;
+    line-height: 4em;
+  }
 }
 @media screen and (max-width: 40em) {
   .review-title {
     color: #007AFF;
+    line-height: 4em;
   }
 }
-.review-title {
-  color: #FFF;
-  line-height: 4em;
+
+/*************************************************** DownloadApp ***************************************************/
+.mw-20 {
+  margin: auto;
+}
+@media screen and (max-width: 40em) {
+  .download-container {
+    text-align: center;
+    background-color: #20313e;
+  }
+
+  .appstore {
+    max-height: 3em;
+    height: 100%;
+    background-image: url('https://static.justpark.com/web/d0558d91063038236b60e3ef71fdc1fd.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .google {
+    max-height: 3em;
+    height: 100%;
+    background-image: url('https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .download-text {
+    margin-top: 2em;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 2em;
+    color: #20313e;
+    line-height: 0.5em;
+  }
+
+ ul li span {
+   color: #fff;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .download-container {
+    height: 100%;
+    max-height: 60em;
+    background-color: #20313e;
+    color: #fff;
+  }
+
+  .download-image {
+    height: 35em;
+    background-image: url('https://static.justpark.com/web/ea87929c1aba72323daa202674e5255a.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .mw-20 {
+    max-width: 20em;
+  }
+
+  .appstore {
+    height: 55px;
+    background-image: url('https://i1.wp.com/andicars.com/wp-content/uploads/2017/02/app-store-badge.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .google {
+    height: 55px;
+    background-image: url('https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .download-container ul li {
+    font-size: 2em;
+    color: #007aff;
+    line-height: 0.5em;
+  }
+
+ .download-container ul li span {
+   color: #fff;
+  }
 }
