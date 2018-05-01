@@ -4,11 +4,11 @@ import MediaQuery from 'react-responsive';
 import PhoneImg from '../images/appdownload/phone.png';
 
 const DownloadApp = (props) => (
- <div className="row download-container align-items-center download-image">
+ <div className="d-flex download-container download-text align-items-center">
    <div className="col-md-6 col-sm-6">
      <div className='mw-20'>
        <h2>Download the app</h2>
-       <ul>
+       <ul className='g-list-inline'>
          <li><h6>5 star rated on both app stores</h6></li>
          <li><h6>20,000+ reservable locations</h6></li>
          <li><h6>Find, pay & extend on-the-go</h6></li>
@@ -17,7 +17,7 @@ const DownloadApp = (props) => (
          <li><h6>Quick rebooking</h6></li>
          <li><h6>Smart notifications</h6></li>
        </ul>
-       <div className='text-align-center row'>
+       <div className='text-align-center d-flex'>
          <div className='appstore col-6 col-md-6 col-sm-6'></div>
          <div className='google col-6 col-md-6 col-sm-6'></div>
        </div>

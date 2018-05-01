@@ -17,6 +17,10 @@ html, body {
   max-height: 35em;
 }
 
+.m-t-0 {
+  margin-top: 0px !important;
+}
+
 .m-b-0 {
   margin-bottom: 0;
 }
@@ -24,6 +28,7 @@ html, body {
 .card {
   max-width: 30em;
 }
+
 
 
 /*************************************************** Slick ***************************************************/
@@ -264,34 +269,18 @@ html, body {
 }
 @media screen and (max-width: 40em) {
   .download-container {
+    max-height: 40em;
     text-align: center;
     background-color: #20313e;
   }
 
-  .appstore {
-    height: 30px;
-    background-image: url('https://static.justpark.com/web/d0558d91063038236b60e3ef71fdc1fd.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .google {
-    height: 30px;
-    background-image: url('https://ncdn1.daysofwonder.com/online/en/img/ol_sw2_buy_google-play.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+  .g-list-inline {
+    list-style: none;
   }
 
   .download-text {
     margin-top: 2em;
     color: #fff;
-  }
-
-  .download-image {
-    background-image: url('https://static.justpark.com/web/ea87929c1aba72323daa202674e5255a.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 }
 
