@@ -6,7 +6,7 @@ import Logo from '../images/logo/logo.svg';
 class FooterFace extends React.Component {
     render(){
         return(
-            <Footer color="stylish-color-dark" className="font-small pt-4 mt-4">
+            <Footer color="stylish-color-dark" className="font-small pt-4">
                 <Container className="text-center text-md-left">
                     <Row className="text-center text-md-left mt-3 pb-3">
                         <Col md="3" lg="3" xl="3" className="mx-auto mt-3">

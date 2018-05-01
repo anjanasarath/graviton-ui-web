@@ -4,7 +4,7 @@ import Autocomplete from 'react-google-autocomplete';
 import { Button, Card, CardBody, CardTitle, CardText } from 'mdbreact';
 
 const RentParking = () => (
-  <div className="rentpark-container mt-5">
+  <div className="rentpark-container">
     <span className="d-flex flex-row-reverse align-items-center justify-content-center rent-span search-span">
       <Card className='search-card mr-lg-2 rentinner-span'>
         <CardBody>

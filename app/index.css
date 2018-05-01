@@ -269,16 +269,15 @@ html, body {
   }
 
   .appstore {
-    max-height: 3em;
-    height: 100%;
+    height: 30px;
     background-image: url('https://static.justpark.com/web/d0558d91063038236b60e3ef71fdc1fd.svg');
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   .google {
-    max-height: 3em;
-    height: 100%;
-    background-image: url('https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png');
+    height: 30px;
+    background-image: url('https://ncdn1.daysofwonder.com/online/en/img/ol_sw2_buy_google-play.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -288,30 +287,20 @@ html, body {
     color: #fff;
   }
 
-  ul li {
-    font-size: 2em;
-    color: #20313e;
-    line-height: 0.5em;
-  }
-
- ul li span {
-   color: #fff;
+  .download-image {
+    background-image: url('https://static.justpark.com/web/ea87929c1aba72323daa202674e5255a.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
 
 @media screen and (min-width: 40em) {
   .download-container {
     height: 100%;
-    max-height: 60em;
+    max-height: 35em;
     background-color: #20313e;
     color: #fff;
-  }
-
-  .download-image {
-    height: 35em;
-    background-image: url('https://static.justpark.com/web/ea87929c1aba72323daa202674e5255a.png');
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   .mw-20 {
@@ -319,14 +308,14 @@ html, body {
   }
 
   .appstore {
-    height: 55px;
+    height: 60px;
     background-image: url('https://i1.wp.com/andicars.com/wp-content/uploads/2017/02/app-store-badge.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .google {
-    height: 55px;
+    height: 60px;
     background-image: url('https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -338,7 +327,7 @@ html, body {
     line-height: 0.5em;
   }
 
- .download-container ul li span {
-   color: #fff;
+  .download-container ul li h6 {
+    color: #fff;
   }
 }
