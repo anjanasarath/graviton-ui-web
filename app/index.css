@@ -42,13 +42,24 @@ html, body {
   background-color: #D1C7C7;
 }
 
+@media screen and (min-width: 40em) {
+.gheader {
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: block;
+  background-color: #fff;
+ }
+}
 
 /*********************************************** Search Parking ***********************************************/
 .search-container {
-  max-height: 20em;
+  max-height: 35em;
   height: 100%;
   background: url('https://static.justpark.com/web/8362adeb44b0343a18739c28247c9d0e.webp') 50% 50% no-repeat #21303e;
   background-size: contain;
+
 }
 
 .search-auto-complete {
@@ -85,6 +96,27 @@ html, body {
   .search-container {
     text-align: center;
   }
+
+  .gm-t-12 {
+    margin-top: 12em;
+  }
+
+  .desktop-hidden {
+    display: contents;
+  }
+
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .gbackground-image {
+    position: absolute;
+  }
+
+  .search-card {
+    background-color:#00695C;
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -92,6 +124,14 @@ html, body {
     max-height: 40em;
     background: url('https://static.justpark.com/web/d853a2a52487372dc1da6a37022a4384.webp') no-repeat #21303e;
     background-size: cover;
+  }
+
+  .desktop-hidden {
+    display: none !important;
+  }
+
+  .mobile-hidden {
+    display: contents;
   }
 
   .search-container {
@@ -112,7 +152,7 @@ html, body {
 /************************************************ Rent Park ************************************************/
 
 .rentpark-container {
-  max-height: 20em;
+  max-height: 30em;
   height: 100%;
   background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') 50% 50% no-repeat #21303e;
   background-size: cover;
@@ -120,7 +160,7 @@ html, body {
 
 @media screen and (min-width: 40em) {
   .rentpark-container {
-    max-height: 50em;
+    max-height: 55em;
     background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') no-repeat #21303e;
     background-size: cover;
   }
@@ -139,12 +179,17 @@ html, body {
     text-align: center;
     color: #fff;
   }
+
+  .rent-title {
+    color: #fff;
+    line-height: 1.5em;
+  }
 }
 
 /************************************************ Car Park ************************************************/
 
 .carpark-container {
-  max-height: 20em;
+  max-height: 30em;
   height: 100%;
   background: url('https://static.justpark.com/web/84c75e192fe467e14e15a8e196e6cf5c.webp') 50% 50% no-repeat #21303e;
   background-size: cover;
@@ -153,7 +198,12 @@ html, body {
 @media screen and (max-width: 40em) {
   .carpark-container {
     text-align: center;
+    color: #fff !important;
+  }
+
+  .car-title {
     color: #fff;
+    line-height: 1.5em;
   }
 }
 
@@ -166,7 +216,7 @@ html, body {
     background: hsla(0,0%,100%,.08);
   }
   .carpark-container {
-    max-height: 40em;
+    max-height: 55em;
     background: url('https://static.justpark.com/web/84c75e192fe467e14e15a8e196e6cf5c.webp') no-repeat #21303e;
     background-size: cover;
   }
@@ -175,13 +225,13 @@ html, body {
 /************************************************ Easy Parking ************************************************/
 .easy-container {
   height: 100%;
-  max-height: 30em;
+  max-height: 45em;
 }
 
 @media screen and (min-width: 40em) {
   .easy-container {
     height: 100%;
-    max-height: 40em;
+    max-height: 45em;
   }
 
   .easy-slick {
@@ -213,6 +263,7 @@ html, body {
 }
 
 .easypark-title {
+  font-size: 40px;
   color: #007aff;
   line-height: 4em;
 }
@@ -230,14 +281,15 @@ html, body {
 
 .review-slider {
   width: 100%;
-  max-width: 80em;
+  max-width: 75em;
   background-color: #fff;
   margin: 0 auto;
 }
 
 .review-container {
   height: 100%;
-  max-height: 40em;
+  max-height: 70em;
+  background-color: #21303e;
 }
 
 .review-section {
@@ -246,30 +298,29 @@ html, body {
 
 @media screen and (min-width: 40em) {
   .review-container {
-    max-height: 50em;
+    max-height: 70em;
     height: 100%;
     background-color: #21303e;
   }
 
   .review-title {
+    font-size: 40px;
     color: #FFF;
     line-height: 4em;
   }
 }
+
 @media screen and (max-width: 40em) {
   .review-title {
-    color: #007AFF;
+    color: #FFF;
     line-height: 4em;
   }
 }
 
 /*************************************************** DownloadApp ***************************************************/
-.mw-20 {
-  margin: auto;
-}
 @media screen and (max-width: 40em) {
   .download-container {
-    max-height: 40em;
+    max-height: 45em;
     text-align: center;
     background-color: #20313e;
   }
@@ -279,17 +330,36 @@ html, body {
   }
 
   .download-text {
-    margin-top: 2em;
+
     color: #fff;
   }
+
+  .appstore {
+    height: 60px;
+    background-image: url('https://i1.wp.com/andicars.com/wp-content/uploads/2017/02/app-store-badge.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .google {
+    height: 60px;
+    background-image: url('https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 }
 
 @media screen and (min-width: 40em) {
   .download-container {
     height: 100%;
-    max-height: 35em;
+    max-height: 45em;
     background-color: #20313e;
     color: #fff;
+  }
+
+  .mw-20 {
+    margin: auto;
   }
 
   .mw-20 {

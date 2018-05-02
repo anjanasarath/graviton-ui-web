@@ -31,7 +31,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <Navbar light expand="md" scrolling>
+      <Navbar className='gheader' light expand="md" scrolling>
         <NavbarBrand>
           <img src={Logo} />
         </NavbarBrand>

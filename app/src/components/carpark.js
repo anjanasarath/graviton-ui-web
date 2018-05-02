@@ -6,9 +6,9 @@ import { Button, Card, CardBody, CardTitle, CardText } from 'mdbreact';
 const CarParking = () => (
   <div className="carpark-container">
     <span className="d-flex flex-row-reverse align-items-center justify-content-center car-span search-span">
-      <Card className='search-card mr-lg-2 carinner-span'>
+      <Card className='search-card mr-lg-2 carinner-span gm-t-12'>
         <CardBody>
-          <CardTitle className='easypark-caption'>Car park management</CardTitle>
+          <CardTitle className='car-title'>Car park management</CardTitle>
           <CardText className='text-black-50'>
             Maximise yield from underused car parks and vacant land, or transform payments with the UK’s favourite parking app.
           </CardText>

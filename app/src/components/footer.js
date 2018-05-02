@@ -55,7 +55,7 @@ class GFooter extends React.Component {
                             <p className="text-center grey-text">Terms of use</p>
                         </Col>
                         <Col md="3">
-                            <p className="text-center grey-text">Where is ParkatmyHouse</p>
+                            <p className="text-center grey-text">Where is ParkatmyHouse?</p>
                         </Col>
                       </div>
                     </div>
