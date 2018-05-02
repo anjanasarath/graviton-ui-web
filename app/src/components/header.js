@@ -33,7 +33,7 @@ class Header extends React.Component {
     return (
       <Navbar className='gheader' light expand="md" scrolling>
         <NavbarBrand>
-          <img src={Logo} />
+          <img style={{position:'fixed', top:'35px'}}src={Logo} />
         </NavbarBrand>
         { !this.state.isWideEnough && <NavbarToggler onClick = { this.navCollapse } />}
         <Collapse isOpen = {this.state.collapse} navbar>
