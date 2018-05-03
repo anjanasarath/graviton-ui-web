@@ -26,7 +26,7 @@ const DownloadApp = (props) => (
    <MediaQuery query='(min-device-width: 40em)'>
      <div className="col-md-6 col-sm-6 d-table h-100">
        <div className="d-table-cell align-bottom">
-        <img src={PhoneImg} height='40%' width='40%' className='img-fluid'/>
+        <img src={PhoneImg} height='50%' width='50%' className='img-fluid'/>
        </div>
      </div>
    </MediaQuery>

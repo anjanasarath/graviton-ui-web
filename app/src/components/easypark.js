@@ -31,7 +31,7 @@ const webSettings = {
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 3,
-  arrows: true,
+  arrows: false,
   autoplay: false,
   accessibility: true,
   autoplaySpeed: 2500,
@@ -43,7 +43,7 @@ const mobileSettings = {
   ...webSettings,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true
+  autoplay: true,
 };
 
 const ParkingEasy = () => (

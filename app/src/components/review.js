@@ -17,12 +17,17 @@ const stars = (props) => {
 
 const UserReview = (props) => (
   <div className="review-section row">
-    <div className="col-md-1">
+    <div className="col-md-1 mobile-hidden">
       <img className="rounded-circle user-profile-image" src={props.image}/>
     </div>
-    <div className="col-md-11 pl-5">
-      <h6>{props.name}</h6>
-      <div>{stars(props).map((star)=>star)}</div>
+    <div className="col-md-11 row col-sm-12 pl-5">
+      <div className='col-sm-6'>
+        <h6>{props.name}</h6>
+        <div>{stars(props).map((star)=>star)}</div>
+      </div>
+      <div className='col-sm-6 d-sm-none' >
+        <img className="rounded-circle user-profile-image" src={props.image}/>
+      </div>
       <p>{props.location}</p>
       <div>{props.comments}</div>
     </div>
@@ -77,7 +82,7 @@ const webSettings = {
   infinite: true,
   rows: 2,
   slidesPerRow: 2,
-  arrows: true,
+  arrows: false,
   autoplay: false,
   accessibility: true,
   autoplaySpeed: 2500,
@@ -91,7 +96,7 @@ const mobileSettings = {
   slidesPerRow: 1,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true
+  autoplay: true,
 };
 
 const UserReviews = () => (

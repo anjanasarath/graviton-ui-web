@@ -9,10 +9,10 @@ class GFooter extends React.Component {
                 <div className="text-center text-md-left">
                     <div className="d-flex flex-wrap gtext-left text-md-left mt-3 pb-3">
                         <Col xs='12' md="3" lg="3" xl="3">
-                            <h6 className="text-uppercase mb-4 font-weight-bold"><img src={Logo} /></h6>
+                          <img src={Logo} />
                         </Col>
                         <hr className="w-100 clearfix d-md-none"/>
-                        <Col xs='12' md="2" lg="2" xl="2">
+                        <Col xs='12' md="3" lg="3" xl="3">
                             <p><a href="#!">About</a></p>
                             <p><a href="#!">How it works</a></p>
                             <p><a href="#!">Help</a></p>
@@ -20,7 +20,7 @@ class GFooter extends React.Component {
                             <p><a href="#!">Contact Us</a></p>
                         </Col>
                         <hr className="w-100 clearfix d-md-none"/>
-                        <Col xs='12' md="3" lg="2" xl="2">
+                        <Col xs='12' md="3" lg="3" xl="3">
                             <p><a href="#!">Cashless parking solution</a></p>
                             <p><a href="#!">Car park management</a></p>
                             <p><a href="#!">Hotel car parks</a></p>
@@ -31,7 +31,7 @@ class GFooter extends React.Component {
                             <p><a href="#!">City parking</a></p>
                         </Col>
                         <hr className="w-100 clearfix d-md-none"/>
-                        <Col xs='12' md="4" lg="3" xl="3">
+                        <Col xs='12' md="3" lg="3" xl="3">
                             <h6 className="text-uppercase mb-4">Contact</h6>
                             <p><i className="fa fa-home"></i> New York, NY 10012, US</p>
                             <p><i className="fa fa-envelope"></i> info@gmail.com</p>
@@ -40,9 +40,9 @@ class GFooter extends React.Component {
                         </Col>
                     </div>
                     <hr/>
-                    <div className="d-flex gtext-left flex-wrap align-items-center">
+                    <div className="d-flex gtext-left text-center flex-wrap align-items-center">
                         <Col xs='12' md="3">
-                            <p className="text-center gtext-left grey-text">&copy; Copyright <a href="https://www.justpark.com"> JustPark 2017 </a></p>
+                            <p className="grey-text">&copy; Copyright <a href="https://www.justpark.com"> JustPark 2017 </a></p>
                         </Col>
                         <Col xs='12' md="2">
                             <p className="grey-text">Site map</p>

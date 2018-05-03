@@ -22,12 +22,14 @@ const SearchParking = () => (
             types={['(regions)']}
             componentRestrictions={{country: "mx"}}
           />
-          <span className='w-50 btn-group justify-content-center'>
-            <Button className='search-button'>Search</Button>
-          </span>
-          <span className='w-50 btn-group justify-content-center'>
-            <Button className='search-button'>I feel lucky</Button>
-          </span>
+          <div className='mt-3'>
+            <span className='w-50 btn-group justify-content-center'>
+              <Button className='search-button'>Search</Button>
+            </span>
+            <span className='w-50 btn-group justify-content-center'>
+              <Button className='search-button'>I feel lucky</Button>
+            </span>
+          </div>
         </CardBody>
       </Card>
     </span>

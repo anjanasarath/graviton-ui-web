@@ -10,9 +10,9 @@ html, body {
 }
 
 @media screen and (max-width: 40em) {
-.gtext-left {
-  text-align: left !important;
-}
+  .gtext-left {
+    text-align: left !important;
+  }
 }
 
 .lh-1-5 {
@@ -39,14 +39,15 @@ html, body {
   color: #007aff;
 }
 
-
-
 /*************************************************** Slick ***************************************************/
 .slick-dots li button:before, .slick-dots li.slick-active button:before {
   color: #007aff;
   font-size: 20px;
 }
 
+.slick-dots {
+  background-color: #fff;
+}
 /*************************************************** Header ***************************************************/
 .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #D1C7C7;
