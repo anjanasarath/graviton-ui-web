@@ -7,7 +7,7 @@ class GFooter extends React.Component {
         return(
             <Footer color="stylish-color-dark" className="font-small pt-4 m-t-0">
                 <div className="text-center text-md-left">
-                    <div className="d-flex flex-wrap text-center text-md-left mt-3 pb-3">
+                    <div className="d-flex flex-wrap gtext-left text-md-left mt-3 pb-3">
                         <Col xs='12' md="3" lg="3" xl="3">
                             <h6 className="text-uppercase mb-4 font-weight-bold"><img src={Logo} /></h6>
                         </Col>
@@ -40,21 +40,21 @@ class GFooter extends React.Component {
                         </Col>
                     </div>
                     <hr/>
-                    <div className="d-flex flex-wrap align-items-center">
+                    <div className="d-flex gtext-left flex-wrap align-items-center">
                         <Col xs='12' md="3">
-                            <p className="text-center grey-text">&copy; {(new Date().getFullYear())} Copyright: <a href="https://www.justpark.com"> justpark.com </a></p>
+                            <p className="text-center gtext-left grey-text">&copy; Copyright <a href="https://www.justpark.com"> JustPark 2017 </a></p>
                         </Col>
                         <Col xs='12' md="2">
-                            <p className="text-center grey-text">Site map</p>
+                            <p className="grey-text">Site map</p>
                         </Col>
                         <Col xs='12' md="2">
-                            <p className="text-center grey-text">Cancellation policy</p>
+                            <p className="grey-text">Cancellation policy</p>
                         </Col>
                         <Col xs='12' md="2">
-                            <p className="text-center grey-text">Terms of use</p>
+                            <p className="grey-text">Terms of use</p>
                         </Col>
                         <Col xs='12' md="3">
-                            <p className="text-center grey-text">Where is ParkatmyHouse?</p>
+                            <p className="grey-text">Where is ParkatmyHouse?</p>
                         </Col>
                     </div>
                 </div>

@@ -8,20 +8,20 @@ const ParkingEasySlider = (props) => (
     <div>
       <img className="round-img easy0ne" alt="" />
       <h3 className='easypark-caption'>Whereever, whenever</h3>
-      <div className='lh-1-5'>Choose from millions of spaces across UK</div>
-      <div className='lh-1-5'>Find your best option for every car journey</div>
+      <div className='lh-1-5 easy-center'>Choose from millions of spaces across UK</div>
+      <div className='lh-1-5 easy-center'>Find your best option for every car journey</div>
     </div>
     <div>
       <img className="round-img easytwo" alt="" />
       <h3 className='easypark-caption'>Peace of mind</h3>
-      <div className='lh-1-5'>View information of availability, price and restrictions</div>
-      <div className='lh-1-5'>Reserve in advance at over 20,000+ locations</div>
+      <div className='lh-1-5 easy-center'>View information of availability, price and restrictions</div>
+      <div className='lh-1-5 easy-center'>Reserve in advance at over 20,000+ locations</div>
     </div>
     <div>
       <img className="round-img easythree" alt="" />
       <h3 className='easypark-caption'>Seamless experience</h3>
-      <div className='lh-1-5'>Pay for JustPark spaces via the app or website</div>
-      <div className='lh-1-5'>Follow easy directions and access instructions</div>
+      <div className='lh-1-5 easy-center'>Pay for JustPark spaces via the app or website</div>
+      <div className='lh-1-5 easy-center'>Follow easy directions and access instructions</div>
     </div>
   </Slider>
 );
