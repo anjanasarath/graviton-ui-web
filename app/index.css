@@ -277,7 +277,6 @@ html, body {
   width: 100%;
   max-width: 75em;
   background-color: #fff;
-  margin: 0 auto;
 }
 
 .review-container {
@@ -291,6 +290,10 @@ html, body {
 }
 
 @media screen and (min-width: 40em) {
+  .review-slider {
+    margin: 0 auto;
+  }
+
   .review-container {
     max-height: 70em;
     height: 100%;
@@ -314,13 +317,15 @@ html, body {
 /*************************************************** DownloadApp ***************************************************/
 @media screen and (max-width: 40em) {
   .download-container {
-    max-height: 45em;
+    height: 100%;
+    max-height: 35em;
     text-align: center;
     background-color: #20313e;
   }
 
   .g-list-inline {
     list-style: none;
+    padding: 0px;
   }
 
   .download-text {
@@ -329,14 +334,14 @@ html, body {
   }
 
   .appstore {
-    height: 60px;
+    height: 65px;
     background-image: url('https://i1.wp.com/andicars.com/wp-content/uploads/2017/02/app-store-badge.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .google {
-    height: 60px;
+    height: 65px;
     background-image: url('https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -353,22 +358,19 @@ html, body {
   }
 
   .mw-20 {
-    margin: auto;
-  }
-
-  .mw-20 {
     max-width: 20em;
+    margin: 0 auto;
   }
 
   .appstore {
-    height: 60px;
+    height: 65px;
     background-image: url('https://i1.wp.com/andicars.com/wp-content/uploads/2017/02/app-store-badge.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .google {
-    height: 60px;
+    height: 65px;
     background-image: url('https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png');
     background-repeat: no-repeat;
     background-size: cover;
