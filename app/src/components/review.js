@@ -20,12 +20,12 @@ const UserReview = (props) => (
     <div className="col-md-1 mobile-hidden">
       <img className="rounded-circle user-profile-image" src={props.image}/>
     </div>
-    <div className="col-md-11 row col-sm-12 pl-5">
-      <div className='col-sm-6'>
+    <div className="col-md-11 col-sm-12 pl-5 row">
+      <div>
         <h6>{props.name}</h6>
         <div>{stars(props).map((star)=>star)}</div>
       </div>
-      <div className='col-sm-6 d-sm-none' >
+      <div className='d-sm-none flex-fill pl-3'>
         <img className="rounded-circle user-profile-image" src={props.image}/>
       </div>
       <p>{props.location}</p>
