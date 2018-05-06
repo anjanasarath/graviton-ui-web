@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import ReactDom from 'react-dom';
-import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
+import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink } from 'mdbreact';
 import Logo from '../images/logo/logo.svg';
 
 class Header extends React.Component {
@@ -10,22 +10,14 @@ class Header extends React.Component {
     this.state = {
       collapse: false,
       isWideEnough: false,
-      dropdownOpen: false
     };
 
     this.navCollapse = this.navCollapse.bind(this);
-    this.dropdownToggle = this.dropdownToggle.bind(this);
   }
 
   navCollapse() {
     this.setState({
       collapse: !this.state.collapse,
-    });
-  }
-
-  dropdownToggle() {
-    this.setState({
-      dropdownOpen: !this.state.dropdownOpen
     });
   }
 
@@ -38,18 +30,6 @@ class Header extends React.Component {
         { !this.state.isWideEnough && <NavbarToggler onClick = { this.navCollapse } />}
         <Collapse isOpen = {this.state.collapse} navbar>
           <NavbarNav right>
-            <NavItem>
-              <NavLink to="#">Help</NavLink>
-            </NavItem>
-            <NavItem>
-              <Dropdown isOpen={this.state.dropdownOpen} toggle={this.dropdownToggle}>
-                <DropdownToggle nav caret>List your space</DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem href="#">Space 1</DropdownItem>
-                  <DropdownItem href="#">Space 2</DropdownItem>
-                </DropdownMenu>
-              </Dropdown>
-            </NavItem>
             <NavItem>
               <NavLink to="/login">Login</NavLink>
             </NavItem>

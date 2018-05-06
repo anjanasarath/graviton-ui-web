@@ -9,9 +9,24 @@ html, body {
   color: #ffc107;
 }
 
+.gbackground {
+  background-color: #20313e;
+}
+
+.drop-toggle-btn.btn-secondary.dropdown-toggle {
+  background-color: #007aff !important;
+  margin: 0px;
+  height: 4.5em;
+  text-transform: none;
+}
+
 @media screen and (max-width: 40em) {
   .gtext-left {
     text-align: left !important;
+  }
+
+  .gtext-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
   }
 }
 
@@ -32,7 +47,7 @@ html, body {
 }
 
 .card {
-  max-width: 30em;
+  max-width: 40em;
 }
 
 .card-title {
@@ -45,8 +60,17 @@ html, body {
   font-size: 20px;
 }
 
-.slick-dots {
-  background-color: #fff;
+@media screen and (min-width: 40em) {
+  .slick-dots {
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .slick-dots li button:before, .slick-dots li.slick-active button:before {
+    color: #00695C;
+    font-size: 20px;
+  }
 }
 /*************************************************** Header ***************************************************/
 .dropdown .dropdown-menu .dropdown-item:hover {
@@ -59,14 +83,6 @@ html, body {
 }
 
 /*********************************************** Search Parking ***********************************************/
-.search-container {
-  max-height: 35em;
-  height: 100%;
-  background: url('https://static.justpark.com/web/8362adeb44b0343a18739c28247c9d0e.webp') 50% 50% no-repeat #21303e;
-  background-size: contain;
-
-}
-
 .search-auto-complete {
   width: 100%;
   height: 4em;
@@ -74,6 +90,7 @@ html, body {
   border-width: 0;
   border: 1px solid grey;
   padding-left: 3em;
+  font-size: 1em;
   background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNyAyNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpmaWdtYT0iaHR0cDovL3d3dy5maWdtYS5jb20vZmlnbWEvbnMiPgo8dGl0bGU+c2lkZWNhcl9vZmZpY2UtaWNvbi1zZXQtNzI8L3RpdGxlPgo8ZGVzYz5DcmVhdGVkIHVzaW5nIEZpZ21hPC9kZXNjPgo8ZyBpZD0iQ2FudmFzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTYwIC0xNTcpIiBmaWdtYTp0eXBlPSJjYW52YXMiPgo8ZyBpZD0ic2lkZWNhcl9vZmZpY2UtaWNvbi1zZXQtNzIiIGZpZ21hOnR5cGU9ImZyYW1lIj4KPGcgaWQ9IkxheWVyXzEiIGZpZ21hOnR5cGU9ImZyYW1lIj4KPGcgaWQ9IlNoYXBlIiBmaWdtYTp0eXBlPSJ2ZWN0b3Itb3BlcmF0aW9uIj4KPHVzZSB4bGluazpocmVmPSIjcGF0aDBfZmlsbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYwLjk1IDE1Ny4xKSIvPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8cGF0aCBpZD0icGF0aDBfZmlsbCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDEwLjc1IDBDIDEzLjY1IDAgMTYuMzUgMS4xMDAwMSAxOC4zNSAzLjEwMDAxQyAyMi4yNSA3IDIyLjU1IDEzLjEgMTkuMTUgMTcuMkwgMjUuNTUgMjMuNkMgMjYuMDUgMjQuMSAyNi4wNSAyNC45IDI1LjU1IDI1LjRDIDI1LjI1IDI1LjcgMjQuOTUgMjUuOCAyNC42NSAyNS44QyAyNC4zNSAyNS44IDIzLjk1IDI1LjYgMjMuNzUgMjUuNEwgMTcuMzUgMTlDIDE1LjQ1IDIwLjUgMTMuMTUgMjEuMyAxMC43NSAyMS4zQyA3Ljg1MDAxIDIxLjMgNS4xNSAyMC4yIDMuMTUgMTguMkMgLTEuMDUgMTQuMSAtMS4wNSA3LjMgMy4xNSAzLjEwMDAxQyA1LjI1IDEuMTAwMDEgNy44NTAwMSAwIDEwLjc1IDBaTSA1LjA0OTk5IDQuODk5OTlDIDEuODQ5OTkgOC4xMDAwMSAxLjg0OTk5IDEzLjMgNS4wNDk5OSAxNi41QyA2LjU0OTk5IDE4IDguNjUgMTguOSAxMC44NSAxOC45QyAxMy4wNSAxOC45IDE1LjA1IDE4IDE2LjY1IDE2LjVDIDE5Ljg1IDEzLjMgMTkuODUgOC4xMDAwMSAxNi42NSA0Ljg5OTk5QyAxNS4wNSAzLjM5OTk5IDEzLjA1IDIuNSAxMC44NSAyLjVDIDguNjUgMi41IDYuNTQ5OTkgMy4zOTk5OSA1LjA0OTk5IDQuODk5OTlaIi8+CjwvZGVmcz4KPC9zdmc+Cg==') .75em 50% no-repeat;
 }
 
@@ -82,8 +99,9 @@ html, body {
   border-radius: .4em;
   height: 4em;
   color: #fff;
-  width: 97%;
-  margin: 6px 0px !important;
+  width: 98%;
+  margin: 0px;
+  font-size: 1em;
   text-transform: none;
 }
 
@@ -99,11 +117,11 @@ html, body {
 
 @media screen and (max-width: 40em) {
   .search-container {
+    max-height: 35em;
+    height: 100%;
+    background: url('https://static.justpark.com/web/8362adeb44b0343a18739c28247c9d0e.webp') 50% 50% no-repeat #21303e;
+    background-size: contain;
     text-align: center;
-  }
-
-  .gm-t-12 {
-    margin-top: 12em;
   }
 
   .desktop-hidden {
@@ -127,8 +145,7 @@ html, body {
 @media screen and (min-width: 40em) {
   .search-container {
     max-height: 40em;
-    background: url('https://static.justpark.com/web/d853a2a52487372dc1da6a37022a4384.webp') no-repeat #21303e;
-    background-size: cover;
+    background-color: #20313e;
   }
 
   .desktop-hidden {
@@ -144,14 +161,9 @@ html, body {
   }
 
   .search-card .card-title {
-    font-size: xx-large;
+    font-size: 2.5em;
   }
 
-  .search-span {
-    width: 50%;
-    height: 100%;
-    background-color: #21303e;
-  }
 }
 
 /************************************************ Rent Park ************************************************/
@@ -161,16 +173,19 @@ html, body {
   height: 100%;
   background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') 50% 50% no-repeat #21303e;
   background-size: cover;
+
 }
 
 @media screen and (min-width: 40em) {
   .rentpark-container {
     max-height: 40em;
-    background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') no-repeat #21303e;
+    background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') 50% 50% no-repeat #21303e;
     background-size: cover;
   }
 
   .rent-span {
+    width: 50%;
+    height: 100%;
     background: hsla(0,0%,100%,.7);
   }
 
@@ -214,6 +229,8 @@ html, body {
 
 @media screen and (min-width: 40em) {
   .car-span {
+    width: 50%;
+    height: 100%;
     background: hsla(0,0%,100%,.5);
   }
 
@@ -230,7 +247,7 @@ html, body {
 /************************************************ Easy Parking ************************************************/
 .easy-container {
   height: 100%;
-  max-height: 35em;
+  max-height: 30em;
 }
 
 @media screen and (min-width: 40em) {
@@ -273,6 +290,7 @@ html, body {
 }
 
 .easypark-title {
+  font-style: italic;
   font-size: 40px;
   color: #007aff;
   line-height: 2em;
@@ -292,13 +310,11 @@ html, body {
 .review-slider {
   width: 100%;
   max-width: 75em;
-  background-color: #fff;
-}
+  }
 
 .review-container {
   height: 100%;
-  max-height: 70em;
-  background-color: #21303e;
+  max-height: 40em;
 }
 
 .review-section {
@@ -308,6 +324,7 @@ html, body {
 @media screen and (min-width: 40em) {
   .review-slider {
     margin: 0 auto;
+    background-color: #fff;
   }
 
   .review-container {
@@ -325,8 +342,18 @@ html, body {
 
 @media screen and (max-width: 40em) {
   .review-title {
-    color: #FFF;
+    color: #fff;
     line-height: 4em;
+    font-style: italic;
+  }
+
+  .review-slider {
+    background-color: #20313e;
+    color: #fff;
+  }
+
+  .review-container {
+    background-color: #20313e;
   }
 }
 

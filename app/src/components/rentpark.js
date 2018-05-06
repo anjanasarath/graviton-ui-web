@@ -9,7 +9,7 @@ const RentParking = () => (
       <Card className='search-card mr-lg-2 rentinner-span'>
         <CardBody>
           <CardTitle className='rent-title'>Rent out your parking space</CardTitle>
-          <CardText className='text-black-50'>
+          <CardText className='gtext-white-50'>
             Make easy money by renting out your parking space. It‘s free to list and only takes a few minutes to get up and running.
           </CardText>
           <span className='w-100 justify-content-center'>

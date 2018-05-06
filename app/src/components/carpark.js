@@ -9,7 +9,7 @@ const CarParking = () => (
       <Card className='search-card mr-lg-2 carinner-span'>
         <CardBody>
           <CardTitle className='car-title'>Car park management</CardTitle>
-          <CardText className='text-black-50'>
+          <CardText className='gtext-white-50'>
             Maximise yield from underused car parks and vacant land, or transform payments with the UK’s favourite parking app.
           </CardText>
           <span className='w-100 justify-content-center'>

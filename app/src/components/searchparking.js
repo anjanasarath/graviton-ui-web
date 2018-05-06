@@ -2,11 +2,13 @@ import React, { PropTypes } from 'react';
 import ReactDom from 'react-dom';
 import Autocomplete from 'react-google-autocomplete';
 import { Button, Card, CardBody, CardTitle, CardText } from 'mdbreact';
+import DrivePhone from '../images/home/drive_phone.jpg';
+import DropDown from './dropDown';
 
 const SearchParking = () => (
-  <div className="search-container">
-    <span className="d-flex flex-row-reverse justify-content-center align-items-center search-span">
-      <Card className='search-card gm-t-12 mr-lg-2'>
+  <div className="d-flex search-container gbackground">
+    <div className="d-flex flex-row-reverse justify-content-center align-items-center col-sm-7 col-12">
+      <Card className='search-card mr-lg-2'>
         <CardBody>
           <CardTitle className='text-white search-park-title'>Find parking in</CardTitle>
           <CardText className='text-white mobile-hidden'>
@@ -22,17 +24,25 @@ const SearchParking = () => (
             types={['(regions)']}
             componentRestrictions={{country: "mx"}}
           />
-          <div className='mt-3'>
-            <span className='w-50 btn-group justify-content-center'>
+        <div className='dropdown mt-2'>
+            <span>
+              <DropDown/>
+            </span>
+          </div>
+          <div className='d-flex mt-2'>
+            <div className='col-6 p-0'>
               <Button className='search-button'>Search</Button>
-            </span>
-            <span className='w-50 btn-group justify-content-center'>
-              <Button className='search-button'>I feel lucky</Button>
-            </span>
+            </div>
+            <div className='col-6 p-0'>
+              <Button className='search-button float-right'>I feel lucky</Button>
+            </div>
           </div>
         </CardBody>
       </Card>
-    </span>
+    </div>
+    <div className='col-sm-5 d-none d-sm-inline'>
+      <img src={DrivePhone} height="100%" />
+    </div>
   </div>
 );
 
