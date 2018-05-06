@@ -17,7 +17,7 @@ const stars = (props) => {
 
 const UserReview = (props) => (
   <div className="review-section row">
-    <div className="col-md-1 mobile-hidden">
+    <div className="col-md-1 d-none d-md-inline">
       <img className="rounded-circle user-profile-image" src={props.image}/>
     </div>
     <div className="col-md-11 col-sm-12 pl-5 row">
@@ -25,10 +25,10 @@ const UserReview = (props) => (
         <h6>{props.name}</h6>
         <div>{stars(props).map((star)=>star)}</div>
       </div>
-      <div className='d-sm-none flex-fill pl-3'>
+      <div className='d-md-none flex-fill pl-3'>
         <img className="rounded-circle user-profile-image" src={props.image}/>
       </div>
-      <p>{props.location}</p>
+      <div className="w-100">{props.location}</div>
       <div>{props.comments}</div>
     </div>
   </div>
@@ -104,10 +104,10 @@ const UserReviews = () => (
     <div className='text-center'>
       <h2 className='review-title'>Reviews</h2>
     </div>
-    <MediaQuery query='(min-device-width: 40em)'>
+    <MediaQuery query='(min-device-width: 80em)'>
       <Review settings={webSettings}/>
     </MediaQuery>
-    <MediaQuery query='(max-device-width: 40em)'>
+    <MediaQuery query='(max-device-width: 80em)'>
       <Review settings={mobileSettings}/>
     </MediaQuery>
   </div>

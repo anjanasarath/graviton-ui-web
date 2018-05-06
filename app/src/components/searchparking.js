@@ -41,7 +41,7 @@ const SearchParking = () => (
       </Card>
     </div>
     <div className='col-sm-5 d-none d-sm-inline'>
-      <img src={DrivePhone} height="100%" />
+      <img src={DrivePhone} height="100%" width="100%" />
     </div>
   </div>
 );
