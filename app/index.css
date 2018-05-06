@@ -115,6 +115,11 @@ html, body {
     color: #007AFF;
 }
 
+.search-image-container {
+  height: 100%;
+  background-size: 100% 100% !important;
+}
+
 @media screen and (max-width: 40em) {
   .search-container {
     max-height: 35em;
@@ -145,6 +150,7 @@ html, body {
 @media screen and (min-width: 40em) {
   .search-container {
     max-height: 40em;
+    height: 100%;
     background-color: #20313e;
   }
 

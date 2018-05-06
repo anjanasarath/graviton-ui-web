@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import ReactDom from 'react-dom';
 import Autocomplete from 'react-google-autocomplete';
 import { Button, Card, CardBody, CardTitle, CardText } from 'mdbreact';
-import DrivePhone from '../images/home/drive_phone.jpg';
+import Styles from '../styles/searchparking';
 import DropDown from './dropDown';
 
 const SearchParking = () => (
@@ -40,8 +40,7 @@ const SearchParking = () => (
         </CardBody>
       </Card>
     </div>
-    <div className='col-sm-5 d-none d-sm-inline'>
-      <img src={DrivePhone} height="100%" width="100%" />
+    <div className='search-image-container col-sm-5 d-none d-sm-inline' style={Styles.dImage}>
     </div>
   </div>
 );
