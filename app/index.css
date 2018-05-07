@@ -5,6 +5,15 @@ html, body {
   font-family: 'CircularStd-Book';
 }
 
+.pt-10 {
+  padding-top: 10rem !important;
+}
+
+.pb-10 {
+  padding-bottom: 10rem !important;
+}
+
+
 .text-yellow {
   color: #ffc107;
 }
@@ -116,7 +125,6 @@ html, body {
 }
 
 .search-image-container {
-  height: 100%;
   background-size: 100% 100% !important;
 }
 
@@ -149,9 +157,8 @@ html, body {
 
 @media screen and (min-width: 40em) {
   .search-container {
-    max-height: 40em;
-    height: 100%;
     background-color: #20313e;
+    justify-content: center;
   }
 
   .desktop-hidden {
@@ -160,10 +167,6 @@ html, body {
 
   .mobile-hidden {
     display: contents;
-  }
-
-  .search-container {
-    justify-content: center;
   }
 
   .search-card .card-title {

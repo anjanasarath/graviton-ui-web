@@ -7,7 +7,7 @@ import DropDown from './dropDown';
 
 const SearchParking = () => (
   <div className="d-flex search-container gbackground">
-    <div className="d-flex flex-row-reverse justify-content-center align-items-center col-sm-7 col-12">
+    <div className="d-flex flex-row-reverse justify-content-center align-items-center col-sm-7 col-12 pt-10 pb-10">
       <Card className='search-card mr-lg-2'>
         <CardBody>
           <CardTitle className='text-white search-park-title'>Find parking in</CardTitle>
