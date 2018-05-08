@@ -4,7 +4,7 @@ import MediaQuery from 'react-responsive';
 import PhoneImg from '../images/appdownload/phone.png';
 
 const DownloadApp = (props) => (
- <div className="d-flex download-container download-text align-items-center">
+ <div className="d-flex download-container pt-7 download-text align-items-center">
    <div className="col-md-6 col-sm-6">
      <div className='mw-20'>
        <h2>Download the app</h2>

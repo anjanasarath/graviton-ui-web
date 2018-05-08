@@ -5,6 +5,22 @@ html, body {
   font-family: 'CircularStd-Book';
 }
 
+.pt-12 {
+  padding-top: 12rem;
+}
+
+.pb-12 {
+  padding-bottom: 12rem;
+}
+
+.pt-7 {
+  padding-top: 7rem;
+}
+
+.pb-7 {
+  padding-bottom: 7rem;
+}
+
 .pt-10 {
   padding-top: 10rem !important;
 }
@@ -178,8 +194,6 @@ html, body {
 /************************************************ Rent Park ************************************************/
 
 .rentpark-container {
-  max-height: 25em;
-  height: 100%;
   background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') 50% 50% no-repeat #21303e;
   background-size: cover;
 
@@ -187,14 +201,12 @@ html, body {
 
 @media screen and (min-width: 40em) {
   .rentpark-container {
-    max-height: 40em;
     background: url('https://static.justpark.com/web/e22c216c94952fe6e02372b9430b8a1c.webp') 50% 50% no-repeat #21303e;
     background-size: cover;
   }
 
   .rent-span {
     width: 50%;
-    height: 100%;
     background: hsla(0,0%,100%,.7);
   }
 
@@ -218,8 +230,6 @@ html, body {
 /************************************************ Car Park ************************************************/
 
 .carpark-container {
-  max-height: 25em;
-  height: 100%;
   background: url('https://static.justpark.com/web/84c75e192fe467e14e15a8e196e6cf5c.webp') 50% 50% no-repeat #21303e;
   background-size: cover;
 }
@@ -239,21 +249,21 @@ html, body {
 @media screen and (min-width: 40em) {
   .car-span {
     width: 50%;
-    height: 100%;
     background: hsla(0,0%,100%,.5);
   }
 
   .carinner-span {
     background: hsla(0,0%,100%,.08);
   }
+
   .carpark-container {
-    max-height: 40em;
     background: url('https://static.justpark.com/web/84c75e192fe467e14e15a8e196e6cf5c.webp') no-repeat #21303e;
     background-size: cover;
   }
 }
 
 /************************************************ Easy Parking ************************************************/
+
 .easy-container {
   height: 100%;
   max-height: 25em;
@@ -290,16 +300,14 @@ html, body {
 .easypark-caption {
   color: #007aff;
   line-height: 1.5em;
+  padding-top: 2rem;
 }
 
 @media screen and (min-width: 40em) {
-  .easy-container {
-    max-height: 40em;
-  }
-
   .easy-slick {
     max-width: 80em;
     margin: 0 auto;
+    padding-top: 2rem;
   }
 
   .easy-center {
@@ -332,11 +340,6 @@ html, body {
   max-width: 75em;
 }
 
-.review-container {
-  height: 100%;
-  max-height: 40em;
-}
-
 .review-section {
   margin: 2em 2em;
 }
@@ -349,12 +352,9 @@ html, body {
 @media screen and (min-width: 40em) {
   .review-slider {
     margin: 0 auto;
-    background-color: #fff;
   }
 
   .review-container {
-    max-height: 50em;
-    height: 100%;
     background-color: #21303e;
   }
 }
@@ -389,7 +389,6 @@ html, body {
   }
 
   .download-text {
-
     color: #fff;
   }
 
@@ -411,8 +410,6 @@ html, body {
 
 @media screen and (min-width: 40em) {
   .download-container {
-    height: 100%;
-    max-height: 35em;
     background-color: #20313e;
     color: #fff;
   }

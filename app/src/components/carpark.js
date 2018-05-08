@@ -5,7 +5,7 @@ import { Button, Card, CardBody, CardTitle, CardText } from 'mdbreact';
 
 const CarParking = () => (
   <div className="carpark-container">
-    <span className="d-flex flex-row-reverse align-items-center justify-content-center car-span search-span">
+    <span className="pt-12 pb-12 d-flex flex-row-reverse align-items-center justify-content-center car-span search-span">
       <Card className='search-card mr-lg-2 carinner-span'>
         <CardBody>
           <CardTitle className='car-title'>Car park management</CardTitle>

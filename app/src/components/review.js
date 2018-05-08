@@ -35,8 +35,8 @@ const UserReview = (props) => (
 );
 
 const Review = (props) => (
-  <div className='review-slider'>
-    <Slider {...props.settings}>
+  <div className='review-slider pb-10'>
+    <Slider className='bg-white' {...props.settings}>
       <div>
         <UserReview
           image={User1}
