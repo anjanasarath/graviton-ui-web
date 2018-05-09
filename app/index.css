@@ -338,6 +338,7 @@ html, body {
 .review-slider {
   width: 100%;
   max-width: 75em;
+  background-color: #21303e;
 }
 
 .review-section {
@@ -352,6 +353,7 @@ html, body {
 @media screen and (min-width: 40em) {
   .review-slider {
     margin: 0 auto;
+    background-color: #fff;
   }
 
   .review-container {
