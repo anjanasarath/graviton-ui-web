@@ -5,7 +5,7 @@ import { Button, Card, CardBody, CardTitle, CardText } from 'mdbreact';
 
 const RentParking = () => (
   <div className="rentpark-container">
-    <span className="pt-12 pb-12 d-flex flex-row-reverse align-items-center justify-content-center rent-span search-span">
+    <span className="d-flex flex-row-reverse align-items-center justify-content-center rent-span search-span">
       <Card className='search-card mr-lg-2 rentinner-span'>
         <CardBody>
           <CardTitle className='rent-title'>Rent out your parking space</CardTitle>

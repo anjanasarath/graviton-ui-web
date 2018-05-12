@@ -29,6 +29,15 @@ html, body {
   padding-bottom: 10rem !important;
 }
 
+@media screen and (min-width: 40em){
+  .pb-sm-10 {
+    padding-bottom: 10rem !important;
+  }
+}
+
+.pb-6 {
+  padding-bottom: 6rem;
+}
 
 .text-yellow {
   color: #ffc107;
@@ -93,7 +102,7 @@ html, body {
 
 @media screen and (max-width: 40em) {
   .slick-dots li button:before, .slick-dots li.slick-active button:before {
-    color: #00695C;
+    color: #00C851;
     font-size: 20px;
   }
 }
@@ -146,8 +155,7 @@ html, body {
 
 @media screen and (max-width: 40em) {
   .search-container {
-    max-height: 35em;
-    height: 100%;
+
     background: url('https://static.justpark.com/web/8362adeb44b0343a18739c28247c9d0e.webp') 50% 50% no-repeat #21303e;
     background-size: contain;
     text-align: center;
@@ -206,6 +214,8 @@ html, body {
   }
 
   .rent-span {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
     width: 50%;
     background: hsla(0,0%,100%,.7);
   }
@@ -221,6 +231,10 @@ html, body {
     color: #fff;
   }
 
+  .rent-span {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
   .rent-title {
     color: #fff;
     line-height: 1.5em;
@@ -244,10 +258,18 @@ html, body {
     color: #fff;
     line-height: 1.5em;
   }
+
+  .car-span {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
 }
 
 @media screen and (min-width: 40em) {
   .car-span {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
     width: 50%;
     background: hsla(0,0%,100%,.5);
   }
@@ -263,11 +285,6 @@ html, body {
 }
 
 /************************************************ Easy Parking ************************************************/
-
-.easy-container {
-  height: 100%;
-  max-height: 25em;
-}
 
 .round-img {
   height:100px;
@@ -379,10 +396,10 @@ html, body {
 /*************************************************** DownloadApp ***************************************************/
 @media screen and (max-width: 40em) {
   .download-container {
-    height: 100%;
-    max-height: 30em;
     text-align: center;
     background-color: #20313e;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
   }
 
   .g-list-inline {
@@ -414,6 +431,7 @@ html, body {
   .download-container {
     background-color: #20313e;
     color: #fff;
+    padding-top: 7rem;
   }
 
   .mw-20 {

@@ -35,7 +35,7 @@ const UserReview = (props) => (
 );
 
 const Review = (props) => (
-  <div className='pb-10'>
+  <div className='pb-6 pb-sm-10'>
     <div className='review-slider'>
       <Slider {...props.settings}>
         <div>
@@ -104,7 +104,7 @@ const mobileSettings = {
 const UserReviews = () => (
   <div className='lh-1-5 review-container justify-content-center'>
     <div className='text-center'>
-      <h2 className='review-title'>Reviews</h2>
+      <h2 className='review-title pt-sm-5 pt-4'>Reviews</h2>
     </div>
     <MediaQuery query='(min-device-width: 80em)'>
       <Review settings={webSettings}/>
