@@ -47,7 +47,7 @@ const mobileSettings = {
 };
 
 const ParkingEasy = () => (
-  <div className='text-center lh-1-5 pb-7 pt-7'>
+  <div className='text-center lh-1-5 pb-sm-5 pt-5 pb-m-5'>
     <h2 className='easypark-title'>Parking made easy</h2>
     <MediaQuery query='(min-device-width: 40em)'>
       <ParkingEasySlider settings={webSettings}/>

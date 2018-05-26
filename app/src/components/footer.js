@@ -43,21 +43,21 @@ class GFooter extends React.Component {
                   </div>
                   <hr/>
                   <div className="d-flex gtext-left text-center flex-wrap align-items-center">
-                      <Col xs='12' md="3">
-                          <p className="grey-text">&copy; Copyright <a href="https://www.justpark.com"> JustPark 2017 </a></p>
-                      </Col>
-                      <Col xs='12' md="2">
-                          <p className="grey-text">Site map</p>
-                      </Col>
-                      <Col xs='12' md="2">
-                          <p className="grey-text">Cancellation policy</p>
-                      </Col>
-                      <Col xs='12' md="2">
-                          <p className="grey-text">Terms of use</p>
-                      </Col>
-                      <Col xs='12' md="3">
-                          <p className="grey-text">Where is ParkatmyHouse?</p>
-                      </Col>
+                    <Col xs='12' md="3">
+                        <p className="grey-text">&copy; Copyright <a href="https://www.justpark.com"> JustPark 2017 </a></p>
+                    </Col>
+                    <Col xs='12' md="2">
+                        <p className="grey-text">Site map</p>
+                    </Col>
+                    <Col xs='12' md="2">
+                        <p className="grey-text">Cancellation policy</p>
+                    </Col>
+                    <Col xs='12' md="2">
+                        <p className="grey-text">Terms of use</p>
+                    </Col>
+                    <Col xs='12' md="3">
+                        <p className="grey-text">Where is ParkatmyHouse?</p>
+                    </Col>
                   </div>
                 </MediaQuery>
                 <MediaQuery query='(max-device-width: 40em)'>
@@ -77,14 +77,14 @@ class GFooter extends React.Component {
                         <p><a href="#!">Stadium parking</a></p>
                         <p><a href="#!">Station parking</a></p>
                         <p><a href="#!">City parking</a></p>
-                    </Col>
-                  </div>
-                <hr/>
-              </MediaQuery>
-            </div>
-          </Footer>
-        );
-    }
-}
+                      </Col>
+                    </div>
+                  <hr/>
+                </MediaQuery>
+              </div>
+            </Footer>
+          );
+        }
+      }
 
 export default GFooter;

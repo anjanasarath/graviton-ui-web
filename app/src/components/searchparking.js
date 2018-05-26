@@ -24,7 +24,7 @@ const SearchParking = () => (
             types={['(regions)']}
             componentRestrictions={{country: "mx"}}
           />
-        <div className='dropdown mt-2'>
+          <div className='dropdown mt-2'>
             <span>
               <DropDown/>
             </span>
