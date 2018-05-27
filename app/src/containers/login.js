@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import SocialLogin from '../components/sociallogin';
 import Styles from '../styles/login';
+import { socialLoginSuccess } from '../actions';
 
 const Login = (props) => (
   <div className="login-container">
@@ -34,7 +35,7 @@ const Login = (props) => (
           <SocialLogin
              style={Styles.gglButton}
              provider='google'
-             appId='645958086585-9nulhpg8e3qlj8aq6a6fit839tbmv5mr.apps.googleusercontent.com'
+             appId='645958086585-r1oo5mqjilkm7lkqt9vkgmfv5na2365h.apps.googleusercontent.com'
              onLoginSuccess={props.googleLoginSuccess}
              onLoginFailure={props.googleLoginFailure}
           >
@@ -61,12 +62,14 @@ const Login = (props) => (
 
 const mapDispatchToProps = (dispatch) => ({
   facebookLoginSuccess: (user) => {
+    dispatch(socialLoginSuccess('facebook',user));
     dispatch(push('/loginSuccess'));
   },
   facebookLoginFailure: (error) => {
     dispatch(push('/loginFailure'));
   },
   googleLoginSuccess: (user) => {
+    dispatch(socialLoginSuccess('google',user));
     dispatch(push('/loginSuccess'));
   },
   googleLoginFailure: (error) => {

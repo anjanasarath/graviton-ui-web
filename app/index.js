@@ -24,7 +24,7 @@ const store = createStore(
 );
 
 // "to initialise application with existing browser session..."
-sessionService.initSessionService(store, { refreshOnCheckAuth: true, redirectPath: '/login', driver: 'COOKIES' });
+//sessionService.initSessionService(store, { refreshOnCheckAuth: false, redirectPath: '/login', driver: 'COOKIES' });
 sagaMiddleware.run(sagas);
 
 ReactDOM.render(
