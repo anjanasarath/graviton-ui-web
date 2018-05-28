@@ -44,7 +44,7 @@ class Header extends React.Component {
             }
             { this.props.authenticated &&
               <NavItem>
-                <Button outline color="primary" onClick={this.props.logout}>Log Out</Button>
+                <Button color="primary" onClick={this.props.logout}>Log Out</Button>
               </NavItem>
             }
             <NavItem>

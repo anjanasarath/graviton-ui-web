@@ -63,14 +63,14 @@ const Login = (props) => (
 const mapDispatchToProps = (dispatch) => ({
   facebookLoginSuccess: (user) => {
     dispatch(socialLoginSuccess('facebook',user));
-    dispatch(push('/loginSuccess'));
+    dispatch(push('/'));
   },
   facebookLoginFailure: (error) => {
     dispatch(push('/loginFailure'));
   },
   googleLoginSuccess: (user) => {
     dispatch(socialLoginSuccess('google',user));
-    dispatch(push('/loginSuccess'));
+    dispatch(push('/'));
   },
   googleLoginFailure: (error) => {
     dispatch(push('/loginFailure'));
